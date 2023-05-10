@@ -6,6 +6,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="../img/5579-primogem.png">
+
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css">
+
     <link rel="stylesheet" href="../../style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -37,45 +41,66 @@
     <main>
         <h1 class="title">Contacto</h1>
 
-        <section>
-            <form action="">
-                <fieldset class="fieldset__contact">
-                    <legend>
-                        <h3 class="subtitle__contact">Ayudanos a mejorar</h3>
-                    </legend>
 
-                    <div>
-                        <label class="text__contact" for="region">Seleccione región</label>
-                        <select class="type__contact" name="region" id="region">
-                            <option value="america">America</option>
-                            <option value="asia">Asia</option>
-                            <option value="europa">Europa</option>
-                        </select>
-                    </div>
 
-                    <div>
-                        <label class="text__contact" for="nombre">Ingrese su nombre de jugador</label>
-                        <input class="type__contact" type="name" id="nombre" placeholder="ejemplo: teffyqueen">
-                    </div>
 
-                    <div>
-                        <label class="text__contact" for="mail">Ingrese su correo</label>
-                        <input class="type__contact" type="email" id="mail" placeholder="ejemplo@email.com" required>
-                    </div>
 
-                    <div>
-                        <label class="text__contact" for="tilde"> Acepta bases y condiciones:</label>
-                        <input type="checkbox" id="tilde" value="Acepta base y condiciones">
-                    </div>
+        <div class="container">
 
-                    <div>
-                        <textarea class="textarea__contact" name="" id="" cols="30" rows="10"></textarea>
+            <div class="form-center">
 
-                        <input class="type__contact--submit" type="submit" value="Enviar comentario">
-                    </div>
-                </fieldset>
-            </form>
-        </section>
+                <form action="">
+                    <fieldset class="fieldset__contact">
+                        <div class="row">
+
+                            <div class="col">
+
+                                <legend>
+                                    <h3 class="subtitle__contact">Ayudanos a mejorar</h3>
+                                </legend>
+
+                                <label class="form-label" for="region">Seleccione región</label>
+                                <select class="form-select mb-3" name="region" id="region">
+                                    <option value="america">America</option>
+                                    <option value="asia">Asia</option>
+                                    <option value="europa">Europa</option>
+                                </select>
+
+                                <div>
+                                    <label class="form-label" for="nombre">Ingrese su nombre de jugador</label>
+                                    <input class="form-control mb-3" type="name" id="nombre"
+                                        placeholder="ejemplo: teffyqueen">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="exampleFormControlInput1" class="form-label">Ingrese su correo</label>
+                                    <input type="email" class="form-control" id="exampleFormControlInput1"
+                                        placeholder="name@example.com" required>
+                                </div>
+
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                    <label class="form-check-label mb-3" for="flexCheckDefault">
+                                        Acepta bases y condiciones
+                                    </label>
+                                </div>
+
+
+                                <div class="mb-3">
+                                    <label for="exampleFormControlTextarea1" class="form-label">Deja tu
+                                        comentario:</label>
+                                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                                </div>
+                                <button type="submit" class="btn btn-light">Enviar</button>
+                            </div>
+                        </div>
+                    </fieldset>
+                </form>
+
+            </div>
+
+        </div>
+
+
 
     </main>
 
@@ -91,7 +116,8 @@
         </ul>
     </footer>
 
-
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js
+"></script>
 </body>
 
 </html>

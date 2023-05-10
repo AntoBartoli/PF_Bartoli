@@ -123,8 +123,8 @@ body footer ul li {
 
 
 .footer__title {
-    
-   /*  display:flex;
+
+    /*  display:flex;
     justify-content: center; */
     text-decoration: underline;
     text-align: right;
@@ -137,7 +137,7 @@ body footer ul li {
     padding: 1rem;
 }
 
-.logo__socialmedia:hover{
+.logo__socialmedia:hover {
     transition: .5s;
     transform: scale(1.2);
 }
@@ -282,21 +282,74 @@ body footer ul li {
 
 /* CONTACTO.HTML */
 
+
+dl,
+ol,
+ul {
+    
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+ol,
+ul {
+    padding-left: 0;
+}
+
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+    line-height: 1.2;
+    color: var(--bs-heading-color, inherit);
+}
+
+.h5,
+h5 {
+    font-size: inherit;
+}
+
+
+/* Hasta acá se editó los cambios que efectuó Bootstrap en la página */
+
+
+.form-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
 .fieldset__contact {
     display: inline-block;
-    border: solid 2px white;
-    padding: 5rem;
-    margin: 3rem 3rem 3rem 30rem;
+    border: solid 5px white;
+    padding: 2rem;
+    border-radius: 40px;
+    /* margin: 3rem 3rem 3rem 30rem; */
     width: 50rem;
 }
 
 .subtitle__contact {
+    display: inline-block;
+    border-radius: 20px;
     text-decoration: underline;
     font-size: 2rem;
     border: solid 2px white;
     padding: 1rem;
 }
 
+/*
 .text__contact {
     font-size: 1.3rem;
 }
@@ -314,4 +367,4 @@ body footer ul li {
     width: auto;
     font-size: large;
     margin-left: 41rem;
-}
+} */
