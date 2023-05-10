@@ -8,6 +8,7 @@ body {
     font-family: 'Varela Round', sans-serif;
     min-height: 100vh;
     position: relative;
+    line-height: inherit;
 }
 
 /* HEADER */
@@ -229,9 +230,10 @@ body footer ul li {
     margin-bottom: 5rem; */
 }
 
+
 /* ARMAS.HTML */
 
-
+/* Grid de armas.html */
 .container {
     display: grid;
     grid-template-columns: 25% 25% 25% 25%;
@@ -319,8 +321,6 @@ body footer ul li {
 
 
 
-
-
 .subtitle__weapons {
     text-decoration: underline;
     text-align: left;
@@ -330,18 +330,16 @@ body footer ul li {
 }
 
 .text__weapons {
-
-display: flex;
-flex-direction: column;
-justify-content: center;
-
-border: 5px solid white;
-text-align: justify;
-font-size: 1.3rem;
-padding: 2rem;
-width: 50rem;
-height: 25rem;
-margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border: 5px solid white;
+    text-align: justify;
+    font-size: 1.3rem;
+    padding: 2rem;
+    width: 50rem;
+    height: 30rem;
+    margin-top: 2rem;
 }
 
 .img__weapons {
@@ -377,9 +375,35 @@ margin-top: 2rem;
     margin: 2rem;
 }
 
+
 /* CONTACTO.HTML */
 
+.form-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
+
+.fieldset__contact {
+    display: inline-block;
+    border: solid 5px white;
+    padding: 2rem;
+    border-radius: 40px;
+    /* margin: 3rem 3rem 3rem 30rem; */
+    width: 50rem;
+}
+
+.subtitle__contact {
+    display: inline-block;
+    border-radius: 20px;
+    text-decoration: underline;
+    font-size: 2rem;
+    border: solid 2px white;
+    padding: 1rem;
+}
+
+/*bootstrap */
 dl,
 ol,
 ul {
@@ -417,34 +441,23 @@ h5 {
     font-size: inherit;
 }
 
+*,
+::after,
+::before {
+    box-sizing: inherit;
+}
+
+.container {
+    box-sizing: border-box;
+}
+
+
+
+
 
 /* Hasta acá se editó los cambios que efectuó Bootstrap en la página */
 
 
-.form-center {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-
-.fieldset__contact {
-    display: inline-block;
-    border: solid 5px white;
-    padding: 2rem;
-    border-radius: 40px;
-    /* margin: 3rem 3rem 3rem 30rem; */
-    width: 50rem;
-}
-
-.subtitle__contact {
-    display: inline-block;
-    border-radius: 20px;
-    text-decoration: underline;
-    font-size: 2rem;
-    border: solid 2px white;
-    padding: 1rem;
-}
 
 /*
 .text__contact {
