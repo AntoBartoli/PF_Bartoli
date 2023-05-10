@@ -60,7 +60,7 @@ main {
 }
 
 /* TÍTULOS */
-.title {
+.title_main {
     font-family: 'Courgette', cursive;
     text-align: center;
     font-size: 4rem;
@@ -107,7 +107,7 @@ body footer {
     position: absolute;
     bottom: 0;
     width: 100%;
-    height: 7rem;
+    height: 8rem;
 }
 
 
@@ -231,29 +231,126 @@ body footer ul li {
 
 /* ARMAS.HTML */
 
+
+.container {
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: min-content min-content min-content min-content min-content min-content min-content min-content min-content min-content min-content;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+        ". title title ."
+        "subtitle subtitle . ."
+        "img img text text"
+        "subtitle2 subtitle2 . ."
+        "img2 img2 text2 text2"
+        "subtitle3 subtitle3 . ."
+        "img3 img3 text3 text3"
+        "subtitle4 subtitle4 . ."
+        "img4 img4 text4 text4"
+        "subtitle5 subtitle5 . ."
+        "img5 img5 text5 text5";
+}
+
+.title {
+    grid-area: title;
+}
+
+.img {
+    grid-area: img;
+}
+
+.text {
+    grid-area: text;
+}
+
+.img2 {
+    grid-area: img2;
+}
+
+.text2 {
+    grid-area: text2;
+}
+
+.img3 {
+    grid-area: img3;
+}
+
+.text3 {
+    grid-area: text3;
+}
+
+.img4 {
+    grid-area: img4;
+}
+
+.text4 {
+    grid-area: text4;
+}
+
+.img5 {
+    grid-area: img5;
+}
+
+.text5 {
+    grid-area: text5;
+}
+
+.subtitle {
+    grid-area: subtitle;
+}
+
+.subtitle2 {
+    grid-area: subtitle2;
+}
+
+.subtitle3 {
+    grid-area: subtitle3;
+}
+
+.subtitle4 {
+    grid-area: subtitle4;
+}
+
+.subtitle5 {
+    grid-area: subtitle5;
+}
+
+
+
+
+
+
 .subtitle__weapons {
     text-decoration: underline;
     text-align: left;
     font-size: 2rem;
-    padding-left: 7rem;
+    padding-left: 10rem;
     padding-top: 5rem;
 }
 
 .text__weapons {
-    display: inline-block;
-    position: absolute;
-    width: 60rem;
-    text-align: justify;
-    font-size: 1.3rem;
-    padding: 9rem 2rem 4rem 2rem;
+
+display: flex;
+flex-direction: column;
+justify-content: center;
+
+border: 5px solid white;
+text-align: justify;
+font-size: 1.3rem;
+padding: 2rem;
+width: 50rem;
+height: 25rem;
+margin-top: 2rem;
 }
 
 .img__weapons {
-    display: inline-block;
+    display: flex;
+    /* display: inline-block; */
     padding: 2px;
     background-color: white;
-    margin: 2rem 2rem 2rem 4rem;
-    width: 25%;
+    margin: 2rem 2rem 2rem 10rem;
+    width: 50%;
 }
 
 
@@ -286,7 +383,7 @@ body footer ul li {
 dl,
 ol,
 ul {
-    
+
     margin-top: 0;
     margin-bottom: 0;
 }
