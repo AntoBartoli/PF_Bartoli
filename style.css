@@ -13,14 +13,14 @@ body {
 
 /* HEADER */
 body header {
-    padding: 2rem 0rem 2rem 0rem;
+    padding: 2rem 0 2rem 0;
     background-color: rgb(196, 255, 249);
 }
 
 .logo {
     position: absolute;
-    top: 2px;
-    right: 5px;
+    top: 0;
+    right: 4px;
     width: 5rem;
 }
 
@@ -67,6 +67,8 @@ main {
     font-size: 4rem;
     padding-top: 50px;
     padding-bottom: 50px;
+
+
 }
 
 .title__video {
@@ -151,7 +153,7 @@ body footer ul li {
     flex-direction: row;
     justify-content: center;
     text-decoration: underline;
-    padding-top: 1rem ;
+    padding-top: 1rem;
 }
 
 .logo__socialmedia {
@@ -360,7 +362,6 @@ body footer ul li {
     padding: 2rem;
     width: 50rem;
     height: 30rem;
-    margin-top: 2rem;
 }
 
 .img__weapons {
@@ -399,7 +400,46 @@ body footer ul li {
 
 /* CONTACTO.HTML */
 
-.form-center {
+.text__form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: justify;
+    padding: 4rem;
+    margin-right: 3rem;
+
+}
+
+.button__form {
+    background-color: rgb(196, 255, 249);
+    border-radius: 15px;
+    color: rgb(56, 163, 165);
+    border: 2px solid rgb(56, 163, 165);
+    padding: 1rem 2rem;
+    text-align: center;
+    text-decoration: none;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition-duration: 0.4s;
+}
+
+.button2__form:hover {
+    box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+}
+
+
+
+.link__form {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    font-weight: bold;
+    font-size: 1.5rem;
+    list-style-type: none;
+    padding-top: 1rem;
+}
+
+.form__center {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -407,12 +447,14 @@ body footer ul li {
 
 
 .fieldset__contact {
-    display: inline-block;
-    border: solid 5px white;
-    padding: 2rem;
-    border-radius: 40px;
-    /* margin: 3rem 3rem 3rem 30rem; */
+    display: flex;
+    flex-direction: column;
+    border: solid 4px white;
+    padding: 1rem;
+    border-style: groove;
     width: 50rem;
+    background: rgb(25, 177, 179);
+    background: linear-gradient(142deg, rgba(25, 177, 179, 1) 0%, rgba(183, 255, 254, 1) 100%);
 }
 
 .subtitle__contact {
@@ -423,6 +465,7 @@ body footer ul li {
     border: solid 2px white;
     padding: 1rem;
 }
+
 
 /*bootstrap */
 dl,
@@ -462,40 +505,22 @@ h5 {
     font-size: inherit;
 }
 
-*,
-::after,
-::before {
-    box-sizing: inherit;
+
+.logo__socialmedia--contact {
+    width: 5rem;
+    padding: 1rem;
 }
 
-.container {
-    box-sizing: border-box;
+.logo__socialmedia--contact:hover {
+    transition: .5s;
+    transform: scale(1.2);
 }
 
-
-
-
+.row {
+    --bs-gutter-x: 0;
+    --bs-gutter-y: 0;
+    display: flex;
+    flex-wrap: wrap;
+}
 
 /* Hasta acá se editó los cambios que efectuó Bootstrap en la página */
-
-
-
-/*
-.text__contact {
-    font-size: 1.3rem;
-}
-
-.type__contact {
-    width: auto;
-    font-size: large
-}
-
-.textarea__contact {
-    width: 50rem;
-}
-
-.type__contact--submit {
-    width: auto;
-    font-size: large;
-    margin-left: 41rem;
-} */
