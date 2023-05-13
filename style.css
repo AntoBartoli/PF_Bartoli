@@ -9,12 +9,15 @@ body {
     min-height: 100vh;
     position: relative;
     line-height: inherit;
+    overflow-x: hidden;
+    box-sizing: border-box;
 }
 
 /* HEADER */
 body header {
     padding: 2rem 0 2rem 0;
     background-color: rgb(196, 255, 249);
+
 }
 
 .logo {
@@ -257,7 +260,7 @@ body footer ul li {
 /* ARMAS.HTML */
 
 /* Grid de armas.html */
-.container {
+.container__weapons {
     display: grid;
     grid-template-columns: 25% 25% 25% 25%;
     grid-template-rows: min-content min-content min-content min-content min-content min-content min-content min-content min-content min-content min-content;
