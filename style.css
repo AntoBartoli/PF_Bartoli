@@ -1,6 +1,7 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 body {
@@ -10,7 +11,7 @@ body {
     position: relative;
     line-height: inherit;
     overflow-x: hidden;
-    box-sizing: border-box;
+
 }
 
 /* HEADER */
@@ -26,6 +27,7 @@ body header {
     right: 4px;
     width: 5rem;
 }
+
 
 body header nav ul {
     display: flex;
@@ -160,7 +162,7 @@ body footer ul li {
 }
 
 .logo__socialmedia {
-    width: 3rem;
+    width: 5rem;
     padding: 1rem;
 }
 
@@ -211,10 +213,8 @@ body footer ul li {
 .border__artifacts--stats {
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
-    height: 10rem;
-    width: 80%;
     border: solid 4px white;
     border-radius: 4rem;
     padding: 4rem;
@@ -363,13 +363,11 @@ body footer ul li {
     text-align: justify;
     font-size: 1.3rem;
     padding: 2rem;
-    width: 50rem;
-    height: 30rem;
+    margin-right: 2rem;
 }
 
 .img__weapons {
     display: flex;
-    /* display: inline-block; */
     padding: 2px;
     background-color: white;
     margin: 2rem 2rem 2rem 10rem;
@@ -378,26 +376,77 @@ body footer ul li {
 
 
 /* EQUIPOS.HTML */
-
-.border__teams {
-    display: inline-block;
-    border: solid 2px white;
-    padding: 4rem;
-    margin: 3rem 3rem 3rem 15rem;
-    width: 83rem;
+.container__teams {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: min-content min-content min-content min-content min-content min-content min-content;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+        "titleTeams titleTeams"
+        "nameteam1 ."
+        "team1 team1"
+        "nameteam2 ."
+        "team2 team2"
+        "nameteam3 ."
+        "team3 team3";
 }
+
+.titleTeams {
+    grid-area: titleTeams;
+}
+
+.nameteam1 {
+    grid-area: nameteam1;
+}
+
+.team1 {
+    grid-area: team1;
+    display: flex;
+    justify-content: center;
+}
+
+.nameteam2 {
+    grid-area: nameteam2;
+}
+
+.team2 {
+    grid-area: team2;
+    display: flex;
+    justify-content: center;
+}
+
+.nameteam3 {
+    grid-area: nameteam3;
+}
+
+.team3 {
+    grid-area: team3;
+    display: flex;
+    justify-content: center;
+}
+
+
 
 .subtitle__teams {
+    display: flex;
+    justify-content: center;
     text-decoration: underline;
-    text-align: left;
     font-size: 2rem;
-    padding-left: 2rem;
+    padding: 1rem;
 }
 
+
 .img__teams {
-    display: inline-block;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    width: 70%;
+    margin-bottom: 4rem;
     border: 2px solid white;
-    margin: 2rem;
+    background: rgb(183, 255, 254);
+    background: radial-gradient(circle, rgba(183, 255, 254, 0) 0%, rgba(25, 177, 179, 1) 100%);
 }
 
 
