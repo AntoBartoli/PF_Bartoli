@@ -174,27 +174,86 @@ body footer ul li {
 
 /* ARTEFACTOS.HTML */
 
-.flex__artifacts {
+.container__artifacts {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: min-content min-content min-content min-content min-content min-content min-content;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+        "titleartifacts titleartifacts"
+        "artifact1 artifact1"
+        "artifact2 artifact3"
+        "artifact4 artifact5"
+        "artifactStats artifactStats"
+        "subtitleartifact subtitleartifact"
+        "videoartifact videoartifact";
+}
+
+.titleartifacts {
+    grid-area: titleartifacts;
+}
+
+.artifact1 {
+    grid-area: artifact1;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: center;
+}
+
+.artifact2 {
+    grid-area: artifact2;
+    display: flex;
+    justify-content: center;
+}
+
+.artifact3 {
+    grid-area: artifact3;
+    display: flex;
+    justify-content: center;
+}
+
+.artifact4 {
+    grid-area: artifact4;
+    display: flex;
+    justify-content: center;
+}
+
+.artifact5 {
+    grid-area: artifact5;
+    display: flex;
+    justify-content: center;
+}
+
+.artifactStats {
+    grid-area: artifactStats;
+    display: flex;
+    justify-content: center;
+}
+
+.subtitleartifact {
+    grid-area: subtitleartifact;
 
 }
+
+.videoartifact {
+    grid-area: videoartifact;
+    display: flex;
+    justify-content: center;
+}
+
+
 
 .border__artifacts {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
-    width: 40rem;
-
-    /*justify-content: center; */
-    border: solid 4px white;
-    /* display: inline-block; */
-    border-radius: 5rem;
+    width: 70%;
+    border: solid 3px white;
     padding: 2rem;
     margin: 3rem;
-    background-color: rgb(156, 234, 239);
+    background: rgb(183, 255, 254);
+    background: radial-gradient(circle, rgba(183, 255, 254, 0.3393732492997199) 0%, rgba(25, 177, 179, 1) 100%);
 }
 
 .border__artifacts--principal {
@@ -202,12 +261,12 @@ body footer ul li {
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    width: 60%;
-    border: solid 4px white;
-    border-radius: 5rem;
+    width: 70%;
+    border: solid 3px white;
     padding: 2rem;
     margin: 3rem;
-    background-color: rgb(156, 234, 239);
+    background: rgb(183, 255, 254);
+    background: radial-gradient(circle, rgba(183, 255, 254, 0.3393732492997199) 0%, rgba(25, 177, 179, 1) 100%);
 }
 
 .border__artifacts--stats {
@@ -215,11 +274,11 @@ body footer ul li {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    border: solid 4px white;
-    border-radius: 4rem;
-    padding: 4rem;
-    margin: 3rem;
-    background-color: rgb(156, 234, 239);
+    border: solid 3px white;
+    padding: 2rem;
+    margin-bottom: 4rem;
+    background: rgb(183, 255, 254);
+    background: radial-gradient(circle, rgba(183, 255, 254, 0.3393732492997199) 0%, rgba(25, 177, 179, 1) 100%);
 }
 
 
@@ -228,14 +287,12 @@ body footer ul li {
     text-align: center;
     font-size: 2rem;
     padding: 1rem;
-    /* padding-left: 2rem; */
 }
 
 .text__artifacts {
     font-style: italic;
     text-align: justify;
     font-size: 1.5rem;
-    /* padding-bottom: 4rem; */
     padding: 2rem;
 }
 
@@ -249,16 +306,14 @@ body footer ul li {
 }
 
 .video__artifacts {
-    background-color: aliceblue;
-    border-radius: 2rem;
+    background: rgb(25, 177, 179);
+    background: linear-gradient(142deg, rgba(25, 177, 179, 1) 0%, rgba(183, 255, 254, 1) 100%);
+    border-radius: 30px;
     padding: 1rem;
-    /*  margin-left: 23rem;
-    margin-bottom: 5rem; */
 }
 
 
 /* ARMAS.HTML */
-
 /* Grid de armas.html */
 .container__weapons {
     display: grid;
@@ -480,7 +535,6 @@ body footer ul li {
 }
 
 
-
 .link__form {
     display: flex;
     flex-direction: row;
@@ -519,7 +573,8 @@ body footer ul li {
 }
 
 
-/*bootstrap */
+/*Para importar un elemento de Bootstrap tuve que vinculkar la galería del mismo, 
+por lo tanto se me modificó la pag. */
 dl,
 ol,
 ul {
@@ -555,17 +610,6 @@ h6 {
 .h5,
 h5 {
     font-size: inherit;
-}
-
-
-.logo__socialmedia--contact {
-    width: 5rem;
-    padding: 1rem;
-}
-
-.logo__socialmedia--contact:hover {
-    transition: .5s;
-    transform: scale(1.2);
 }
 
 .row {
