@@ -65,49 +65,190 @@ main {
     padding-bottom: 15rem;
 }
 
-/* TÍTULOS */
 .title_main {
     font-family: 'Courgette', cursive;
     text-align: center;
-    font-size: 4rem;
-    padding-top: 50px;
-    padding-bottom: 50px;
+    font-size: 3.5rem;
+    padding-top: 4rem;
+    padding-bottom: 5rem;
+    margin: 0;
+}
 
+/* INDEX */
+
+.container__index {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: min-content min-content min-content;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+        "titleindex titleindex"
+        "historytitle historytitle"
+        "history1 history1"
+        "history2 imgstory"
+        "history3 history3"
+        "textindex videoindex"
+        "ascensiontitle ascensiontitle"
+        "imgindex1 imgindex1";
 
 }
 
-.title__video {
-    font-family: 'Courgette', cursive;
-    text-decoration: underline;
+.titleindex {
+    grid-area: titleindex;
+
+    display: flex;
+    justify-content: center;
+    position: relative;
     text-align: center;
-    font-size: 3rem;
-    padding-top: 15px;
-    padding-bottom: 50px;
+    margin-bottom: 1rem;
+    border-bottom: 3px solid white;
 }
+
+.textindex {
+    grid-area: textindex;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.videoindex {
+    grid-area: videoindex;
+
+    display: flex;
+    justify-content: center;
+
+}
+
+.imgindex1 {
+    grid-area: imgindex1;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+
+.historytitle {
+    grid-area: historytitle;
+}
+
+.history1 {
+    grid-area: history1;
+
+}
+
+.history2 {
+    grid-area: history2;
+    width: 80%;
+}
+
+.history3 {
+    grid-area: history3;
+}
+
+.imgstory {
+    grid-area: imgstory;
+
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 80%;
+    transition: .7s;
+}
+
+.ascensiontitle {
+    grid-area: ascensiontitle;
+}
+
+/* termina el grid */
+
+
+/* título con imagen del index */
+.overlay__index {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s;
+    background: rgb(183, 255, 254);
+    background: radial-gradient(circle, rgba(183, 255, 254, 0.15730042016806722) 0%, rgba(104, 216, 214, 1) 100%);
+}
+
+.titleindex:hover .overlay__index {
+    opacity: 1;
+}
+
+.title_main--index {
+    font-family: 'Courgette', cursive;
+    font-size: 3.5rem;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
 
 .img__index {
-    background-color: aliceblue;
-    border-radius: 2rem;
-    width: 50%;
-    padding: 1rem;
-    margin-left: 30rem;
-    margin-bottom: 4rem;
+    background: rgb(25, 177, 179);
+    background: linear-gradient(142deg, rgba(25, 177, 179, 1) 0%, rgba(183, 255, 254, 1) 100%);
+    border-radius: 20px;
+    padding: .5rem;
+    width: 60%;
 }
 
+
 .video__index {
-    background-color: aliceblue;
+    background: rgb(25, 177, 179);
+    background: linear-gradient(142deg, rgba(25, 177, 179, 1) 0%, rgba(183, 255, 254, 1) 100%);
     border-radius: 2rem;
-    padding: 1rem;
-    margin-left: 23rem;
-    margin-bottom: 5rem;
+    padding: .5rem;
+    margin-right: 1.5rem;
 }
 
 .paragraph__index {
+    background-color: antiquewhite;
     font-style: italic;
     text-align: justify;
     font-size: 1.5rem;
-    padding: 2rem 5rem 5rem 5rem;
+    padding: 3rem;
+    width: 90%;
 }
+
+
+.titleStory {
+    font-family: 'Courgette', cursive;
+    font-size: 2.5rem;
+    text-align: center;
+    padding: 2rem;
+    margin-top: 1rem;
+    margin-bottom: 3rem;
+    background-color: rgb(196, 255, 249);
+}
+
+.textStory {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: justify;
+    font-size: 1.4rem;
+    padding: 1rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+}
+
+.imgstory:hover {
+    transform: scale(1.2);
+}
+
+
 
 /* FOOTER */
 /* Grid del footer */
@@ -164,10 +305,10 @@ body footer ul li {
 .logo__socialmedia {
     width: 5rem;
     padding: 1rem;
+    transition: .5s;
 }
 
 .logo__socialmedia:hover {
-    transition: .5s;
     transform: scale(1.2);
 }
 
@@ -196,6 +337,7 @@ body footer ul li {
 
 .artifact1 {
     grid-area: artifact1;
+
     display: flex;
     justify-content: center;
 }
