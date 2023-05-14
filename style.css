@@ -14,7 +14,16 @@ body {
 
 }
 
-/* HEADER */
+/* =====Oculta contenido que es para el MQ mobile ========*/
+.desktop {
+    display: block;
+}
+
+.mobile {
+    display: none;
+}
+
+/* =============HEADER============= */
 body header {
     padding: 2rem 0 2rem 0;
     background-color: rgb(196, 255, 249);
@@ -74,7 +83,7 @@ main {
     margin: 0;
 }
 
-/* INDEX */
+/* =============INDEX============= */
 
 .container__index {
     display: grid;
@@ -166,10 +175,10 @@ main {
     grid-area: ascensiontitle;
 }
 
-/* termina el grid */
+/*============= termina el grid============= */
 
 
-/* título con imagen del index */
+/* =============título con imagen del index =============*/
 .overlay__index {
     position: absolute;
     height: 100%;
@@ -250,8 +259,8 @@ main {
 
 
 
-/* FOOTER */
-/* Grid del footer */
+/* =============FOOTER =============*/
+/* =============Grid del footer =============*/
 .container__footer {
     display: grid;
     grid-template-columns: 25% 25% 25% 25%;
@@ -273,8 +282,8 @@ main {
 
 
 body footer {
-    background-color: rgb(156, 234, 239);
-    border: 2px solid rgb(196, 255, 249);
+    background-color: rgb(196, 255, 249);
+    border: 2px solid white;
     position: absolute;
     bottom: 0;
     width: 100%;
@@ -313,7 +322,7 @@ body footer ul li {
 }
 
 
-/* ARTEFACTOS.HTML */
+/* =============ARTEFACTOS.HTML =============*/
 
 .container__artifacts {
     display: grid;
@@ -440,11 +449,12 @@ body footer ul li {
 
 .title__video--artifacts {
     font-family: 'Courgette', cursive;
-    text-decoration: underline;
+    font-size: 2.5rem;
     text-align: center;
-    font-size: 3rem;
-    padding-top: 15px;
-    padding-bottom: 50px;
+    padding: 2rem;
+    margin-top: 1rem;
+    margin-bottom: 3rem;
+    background-color: rgb(196, 255, 249);
 }
 
 .video__artifacts {
@@ -455,8 +465,8 @@ body footer ul li {
 }
 
 
-/* ARMAS.HTML */
-/* Grid de armas.html */
+/* ============= ARMAS.HTML =============*/
+/*============= Grid de armas.html =============*/
 .container__weapons {
     display: grid;
     grid-template-columns: 25% 25% 25% 25%;
@@ -466,7 +476,7 @@ body footer ul li {
     grid-template-areas:
         ". title title ."
         "subtitle subtitle . ."
-        "img img text text"
+        "img img text1 text1"
         "subtitle2 subtitle2 . ."
         "img2 img2 text2 text2"
         "subtitle3 subtitle3 . ."
@@ -485,8 +495,8 @@ body footer ul li {
     grid-area: img;
 }
 
-.text {
-    grid-area: text;
+.text1 {
+    grid-area: text1;
 }
 
 .img2 {
@@ -550,6 +560,7 @@ body footer ul li {
     font-size: 2rem;
     padding-left: 10rem;
     padding-top: 5rem;
+
 }
 
 .text__weapons {
@@ -572,7 +583,8 @@ body footer ul li {
 }
 
 
-/* EQUIPOS.HTML */
+
+/*============= EQUIPOS.HTML =============*/
 .container__teams {
     display: grid;
     grid-template-columns: 50% 50%;
@@ -647,7 +659,7 @@ body footer ul li {
 }
 
 
-/* CONTACTO.HTML */
+/*============= CONTACTO.HTML =============*/
 
 .text__form {
     display: flex;
@@ -715,7 +727,7 @@ body footer ul li {
 }
 
 
-/*Para importar un elemento de Bootstrap tuve que vinculkar la galería del mismo, 
+/*============= Para importar un elemento de Bootstrap tuve que vinculkar la galería del mismo, 
 por lo tanto se me modificó la pag. */
 dl,
 ol,
@@ -761,4 +773,345 @@ h5 {
     flex-wrap: wrap;
 }
 
-/* Hasta acá se editó los cambios que efectuó Bootstrap en la página */
+/*========== Hasta acá se editó los cambios que efectuó Bootstrap en la página */
+
+
+
+
+
+
+
+/* ========================== MEDIA QUERIES - Mobile ==========================
+--------------------------------------------------------------------------------*/
+
+@media screen and (max-width: 425px) {
+    main {
+        padding-top: 4rem;
+        padding-bottom: 5rem;
+    }
+
+    .desktop {
+        display: none;
+    }
+
+    .mobile {
+        display: block;
+    }
+
+/* ============ Header ============  */
+
+    body header {
+        padding: 0;
+        position: fixed;
+        width: 100%;
+
+    }
+
+    .topnav {
+        overflow: hidden;
+        background-color: rgb(104, 216, 214);
+        position: relative;
+
+    }
+
+    .topnav #linksMenu {
+        display: none;
+        border-bottom: 3px solid rgb(196, 255, 249);
+    }
+
+    .topnav a {
+        color: black;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 17px;
+        display: block;
+    }
+
+    .topnav a.icon {
+        background-color: rgb(196, 255, 249);
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+
+    .topnav a:hover {
+        background-color: rgb(104, 216, 214);
+        color: black;
+    }
+
+    .active {
+        background-color: rgb(196, 255, 249);
+        font-weight: bold;
+    }
+
+
+
+/* ========== Footer ===========  */
+
+    body footer {
+        position: absolute;
+        background-color: transparent;
+        border: 0 solid white;
+        bottom: 0;
+        width: 100%;
+        height: 8rem;
+    }
+
+
+/* ========================= MQ DE INDEX.HTML ========================  */
+
+
+/* .container__index {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: min-content min-content min-content;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+        "titleindex titleindex"
+        "historytitle historytitle"
+        "history1 history1"
+        "history2 imgstory"
+        "history3 history3"
+        "textindex videoindex"
+        "ascensiontitle ascensiontitle"
+        "imgindex1 imgindex1";
+
+}
+
+.titleindex {
+    grid-area: titleindex;
+
+    display: flex;
+    justify-content: center;
+    position: relative;
+    text-align: center;
+    margin-bottom: 1rem;
+    border-bottom: 3px solid white;
+}
+
+.textindex {
+    grid-area: textindex;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.videoindex {
+    grid-area: videoindex;
+
+    display: flex;
+    justify-content: center;
+
+}
+
+.imgindex1 {
+    grid-area: imgindex1;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+
+.historytitle {
+    grid-area: historytitle;
+}
+
+.history1 {
+    grid-area: history1;
+
+}
+
+.history2 {
+    grid-area: history2;
+    width: 80%;
+}
+
+.history3 {
+    grid-area: history3;
+}
+
+.imgstory {
+    grid-area: imgstory;
+
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 80%;
+    transition: .7s;
+}
+
+.ascensiontitle {
+    grid-area: ascensiontitle;
+} */
+
+/*============= termina el grid============= */
+
+
+/* =============título con imagen del index =============*/
+/* .overlay__index {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s;
+    background: rgb(183, 255, 254);
+    background: radial-gradient(circle, rgba(183, 255, 254, 0.15730042016806722) 0%, rgba(104, 216, 214, 1) 100%);
+}
+
+.titleindex:hover .overlay__index {
+    opacity: 1;
+}
+
+.title_main--index {
+    font-family: 'Courgette', cursive;
+    font-size: 3.5rem;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+
+.img__index {
+    background: rgb(25, 177, 179);
+    background: linear-gradient(142deg, rgba(25, 177, 179, 1) 0%, rgba(183, 255, 254, 1) 100%);
+    border-radius: 20px;
+    padding: .5rem;
+    width: 60%;
+}
+
+
+.video__index {
+    background: rgb(25, 177, 179);
+    background: linear-gradient(142deg, rgba(25, 177, 179, 1) 0%, rgba(183, 255, 254, 1) 100%);
+    border-radius: 2rem;
+    padding: .5rem;
+    margin-right: 1.5rem;
+}
+
+.paragraph__index {
+    background-color: antiquewhite;
+    font-style: italic;
+    text-align: justify;
+    font-size: 1.5rem;
+    padding: 3rem;
+    width: 90%;
+}
+
+
+.titleStory {
+    font-family: 'Courgette', cursive;
+    font-size: 2.5rem;
+    text-align: center;
+    padding: 2rem;
+    margin-top: 1rem;
+    margin-bottom: 3rem;
+    background-color: rgb(196, 255, 249);
+}
+
+.textStory {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: justify;
+    font-size: 1.4rem;
+    padding: 1rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+}
+
+.imgstory:hover {
+    transform: scale(1.2);
+} */
+
+
+
+
+/* ========================= MQ DE ARMAS.HTML ========================  */
+    .container__weapons {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+
+    .title_main {
+        font-family: 'Courgette', cursive;
+        text-align: center;
+        font-size: 2.5rem;
+        padding: 1rem;
+    }
+
+
+    .subtitle__weapons {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        font-size: 1.5rem;
+        padding: 2rem;
+    }
+
+    .text__weapons {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        border: 0;
+        text-align: justify;
+        font-size: 1.3rem;
+        padding: 1rem;
+        margin: 1rem;
+
+    }
+
+
+    .img {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .img2 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .img3 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .img4 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .img5 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .img__weapons {
+        padding: 2px;
+        background-color: white;
+        width: 50%;
+        margin: 0%;
+    }
+
+}

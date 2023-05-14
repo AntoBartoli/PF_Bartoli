@@ -5,11 +5,17 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
     <link rel="icon" href="../img/elegia_del_fin.png">
     <link rel="stylesheet" href="../../style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Courgette&display=swap" rel="stylesheet">
+
+    <script type="text/javascript" src="../../scripts.js"></script>
+
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -17,25 +23,47 @@
     <title>Mejores Armas</title>
 </head>
 
+
 <body>
 
     <header>
-        <a href="../../index.html">
-            <img class="logo" src="../img/venti_logo.png" alt="">
-        </a>
-        <nav>
-            <ul>
-                <li><a href="../../index.html">Inicio</a></li>
-                <li><a href="./artefactos.html">Artefactos</a></li>
-                <li><a class="active" href="#">Armas</a></li>
-                <li><a href="./equipos.html">Equipos</a></li>
-                <li><a href="./contacto.html">Contacto</a></li>
-            </ul>
-        </nav>
+        <div class="desktop">
+            <a class="desktop" href="../../index.html">
+                <img class="logo" src="../img/venti_logo.png" alt="">
+            </a>
+            <nav>
+                <ul>
+                    <li><a href="../../index.html">Inicio</a></li>
+                    <li><a href="./artefactos.html">Artefactos</a></li>
+                    <li><a class="active" href="#">Armas</a></li>
+                    <li><a href="./equipos.html">Equipos</a></li>
+                    <li><a href="./contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="mobile">
+            <div class="topnav">
+                <a href="../../index.html" class="active">Hey, Traveler!</a>
+                <div id="linksMenu">
+                    <a href="../../index.html">Inicio</a>
+                    <a href="./artefactos.html">Artefactos</a>
+                    <a class="active" href="#">Armas</a>
+                    <a href="./equipos.html">Equipos</a>
+                    <a href="./contacto.html">Contacto</a>
+                </div>
+                <a href="javascript:void(0);" class="icon" onclick="menuMobile()">
+                    <i class="fa fa-bars"></i>
+                </a>
+            </div>
+        </div>
     </header>
 
-    <main>
 
+
+
+
+    <main>
         <section>
             <div class="container__weapons">
                 <div class="title">
@@ -46,10 +74,12 @@
                 </div>
                 <div class="img"><img class="img__weapons" src="../img/elegia_del_fin1.jpg" alt="Arma elegia_del_fin">
                 </div>
-                <div class="text text__weapons">
+                <div class="text1 text__weapons">
                     <p><u>Ataque Básico:</u> 608</p>
                     <p><u>Recarga de Energía:</u> 55.1% </p>
-                    <p><u>Pasiva:</u> Una parte del «Gran concierto milenario» que flota por los vientos. Aumenta
+                    <p class="desktop"><u>Pasiva:</u> Una parte del «Gran concierto milenario» que flota por
+                        los
+                        vientos. Aumenta
                         <strong>60</strong> puntos la
                         Maestría Elemental. Cuando el personaje que lleva esta arma equipada ataca a un enemigo con una
                         Habilidad Elemental o Definitiva, dicho personaje obtiene un talismán de reminiscencia que puede
@@ -66,6 +96,17 @@
                         con
                         otros
                         efectos del mismo tipo.
+                    </p>
+                    <p class="mobile"><u>Pasiva:</u>Aumenta
+                        <strong>60</strong> puntos la
+                        Maestría Elemental. Cuando el personaje que lleva esta arma equipada ataca a un enemigo con una
+                        Habilidad Elemental o Definitiva, dicho personaje obtiene un talismán de reminiscencia. Al
+                        obtener 4 talismanes de
+                        reminiscencia, aumenta en
+                        <strong>100</strong> puntos la
+                        Maestría Elemental y el Ataque en un <strong>20%</strong>. Tras activarse este efecto, no podrán
+                        obtenerse talismanes de
+                        reminiscencia durante 20 segundos.
                     </p>
                 </div>
 
@@ -146,7 +187,7 @@
     <footer>
         <div class="container__footer">
             <div class="txt footer__title">
-                <h5>Siguenos en nuestras redes sociales</h5>
+                <h5 class="desktop">Siguenos en nuestras redes sociales</h5>
             </div>
             <div class="socialmedia">
                 <ul>
