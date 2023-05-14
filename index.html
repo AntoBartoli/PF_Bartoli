@@ -5,15 +5,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script type="text/javascript" src="./scripts.js"></script>
+
     <link rel="icon" href="./assets/img/1946_anemo.png">
-
-
     <link rel="stylesheet" href="./style.css">
-
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Courgette&display=swap" rel="stylesheet">
-
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
@@ -21,80 +21,54 @@
     <title>Venti el Arconte Anemo</title>
 </head>
 
+
 <body>
 
     <header>
-        <a href="#">
-            <img class="logo" src="./assets/img/venti_logo.png" alt="">
-        </a>
-        <nav>
-            <ul>
-                <li><a class="active" href="#">Inicio</a></li>
-                <li><a href="./assets/pages/artefactos.html">Artefactos</a></li>
-                <li><a href="./assets/pages/armas.html">Armas</a></li>
-                <li><a href="./assets/pages/equipos.html">Equipos</a></li>
-                <li><a href="./assets/pages/contacto.html">Contacto</a></li>
-            </ul>
-        </nav>
+        <div class="desktop">
+            <a href="#">
+                <img class="logo" src="./assets/img/venti_logo.png" alt="">
+            </a>
+            <nav>
+                <ul>
+                    <li><a class="active" href="#">Inicio</a></li>
+                    <li><a href="./assets/pages/artefactos.html">Artefactos</a></li>
+                    <li><a href="./assets/pages/armas.html">Armas</a></li>
+                    <li><a href="./assets/pages/equipos.html">Equipos</a></li>
+                    <li><a href="./assets/pages/contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="mobile">
+            <div class="topnav">
+                <a href="#" class="active">Hey, Traveler!</a>
+                <div id="linksMenu">
+                    <a class="active" href="#">Inicio</a>
+                    <a href="./assets/pages/artefactos.html">Artefactos</a>
+                    <a href="./assets/pages/armas.html">Armas</a>
+                    <a href="./assets/pages/equipos.html">Equipos</a>
+                    <a href="./assets/pages/contacto.html">Contacto</a>
+                </div>
+                <a href="javascript:void(0);" class="icon" onclick="menuMobile()">
+                    <i class="fa fa-bars"></i>
+                </a>
+            </div>
+        </div>
+
     </header>
 
     <main>
         <section>
-
             <div class="container__index">
 
                 <div class="titleindex">
                     <img src="./assets/img/genshin-impact-venti-1.png" width="100%" alt="Venti Genshin Impact">
                     <div class="overlay__index">
-                        <h1 class="title_main--index">“Perfect timing, Traveler! Tell me— what is your greatest wish?”
+                        <h1 class="title_main--index">“Perfect timing, Traveler! Tell me— what is your greatest
+                            wish?”
                         </h1>
                     </div>
-                </div>
-
-
-
-
-                <div class="textindex">
-
-                    <p class="paragraph__index"> Venti es un bardo de espíritu libre y amante del vino en Mondstadt
-                        y el
-                        actual
-                        recipiente
-                        mortal de Barbatos, el Arconte Anemo. Un bardo misterioso al que le gusta recitar tanto
-                        viejos
-                        poemas
-                        como nuevas canciones de moda. Le encantan las manzanas, el vino y los ambientes animados,
-                        odia
-                        el queso
-                        y es alérgico a los gatos.
-
-                        Puede manifestarse en forma de plumas y viento, seguramente debido a su obsesión por los
-                        objetos
-                        ligeros
-                        y voladores.</p>
-
-                </div>
-
-
-                <div class="videoindex">
-
-                    <iframe class="video__index" width="1180" height="620"
-                        src="https://www.youtube.com/embed/TSsWsCdiiPI"
-                        title="Demo de personaje de Genshin Impact - Venti: El trabajo de un bardo (doblaje en inglés)"
-                        frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                        allowfullscreen></iframe>
-
-                </div>
-
-
-                <div class="ascensiontitle">
-                    <h2 class="titleStory">Materiales de ascensión de personaje</h2>
-                </div>
-
-                <div class="imgindex1">
-                    <img class="img__index" src="./assets/img/venti-ascension-talnet-mora-materials-genshin-impact.png"
-                        alt="ascension-talnet-mora-materials">
                 </div>
 
 
@@ -150,6 +124,10 @@
                     </p>
                 </div>
 
+                <div class="imgstory">
+                    <img src="./assets/img/dvalin_barbatos.png" alt="">
+                </div>
+
                 <div class="history3">
                     <h2 class="titleStory">Sobre su visión:</h2>
                     <p class="textStory">
@@ -171,8 +149,44 @@
                     </p>
                 </div>
 
-                <div class="imgstory">
-                    <img src="./assets/img/dvalin_barbatos.png" alt="">
+                <div class="textindex">
+                    <p class="paragraph__index"> Venti es un bardo de espíritu libre y amante del vino en Mondstadt
+                        y el
+                        actual
+                        recipiente
+                        mortal de Barbatos, el Arconte Anemo. Un bardo misterioso al que le gusta recitar tanto
+                        viejos
+                        poemas
+                        como nuevas canciones de moda. Le encantan las manzanas, el vino y los ambientes animados,
+                        odia
+                        el queso
+                        y es alérgico a los gatos.
+
+                        Puede manifestarse en forma de plumas y viento, seguramente debido a su obsesión por los
+                        objetos
+                        ligeros
+                        y voladores.</p>
+                </div>
+
+
+                <div class="videoindex">
+
+                    <iframe class="video__index" width="1180" height="620"
+                        src="https://www.youtube.com/embed/TSsWsCdiiPI"
+                        title="Demo de personaje de Genshin Impact - Venti: El trabajo de un bardo (doblaje en inglés)"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen></iframe>
+
+                </div>
+
+                <div class="ascensiontitle">
+                    <h2 class="titleStory">Materiales de ascensión de personaje</h2>
+                </div>
+
+                <div class="imgindex1">
+                    <img class="img__index" src="./assets/img/venti-ascension-talnet-mora-materials-genshin-impact.png"
+                        alt="ascension-talnet-mora-materials">
                 </div>
 
             </div>
@@ -187,7 +201,7 @@
 
         <div class="container__footer">
             <div class="txt footer__title">
-                <h5>Siguenos en nuestras redes sociales</h5>
+                <h5 class="desktop">Siguenos en nuestras redes sociales</h5>
             </div>
             <div class="socialmedia">
                 <ul>

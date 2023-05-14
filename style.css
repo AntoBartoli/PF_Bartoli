@@ -798,7 +798,7 @@ h5 {
         display: block;
     }
 
-/* ============ Header ============  */
+    /* ============ Header ============  */
 
     body header {
         padding: 0;
@@ -847,7 +847,7 @@ h5 {
 
 
 
-/* ========== Footer ===========  */
+    /* ========== Footer ===========  */
 
     body footer {
         position: absolute;
@@ -859,185 +859,82 @@ h5 {
     }
 
 
-/* ========================= MQ DE INDEX.HTML ========================  */
+    /* ========================= MQ DE INDEX.HTML ========================  */
 
 
-/* .container__index {
-    display: grid;
-    grid-template-columns: 50% 50%;
-    grid-template-rows: min-content min-content min-content;
-    gap: 0px 0px;
-    grid-auto-flow: row;
-    grid-template-areas:
-        "titleindex titleindex"
-        "historytitle historytitle"
-        "history1 history1"
-        "history2 imgstory"
-        "history3 history3"
-        "textindex videoindex"
-        "ascensiontitle ascensiontitle"
-        "imgindex1 imgindex1";
+    .container__index {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
 
-}
+    .titleindex {
+        position:inherit;
+        border-bottom:  none;
+        width: 80%;
+    }
 
-.titleindex {
-    grid-area: titleindex;
+    .overlay__index {
+display: none;
+    }
 
-    display: flex;
-    justify-content: center;
-    position: relative;
-    text-align: center;
-    margin-bottom: 1rem;
-    border-bottom: 3px solid white;
-}
+    .historytitle {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
 
-.textindex {
-    grid-area: textindex;
+    .history1 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
 
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    }
 
-}
+    .textStory {
+        margin-left: 0;
+        margin-right: 0;
+        padding: 1;
+    }
 
-.videoindex {
-    grid-area: videoindex;
+    .titleStory {
+        font-size: 2rem;
+        padding: 1rem;
+        margin-bottom: 2rem;
+    }
 
-    display: flex;
-    justify-content: center;
+    .history2 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
 
-}
+    .imgstory {
+        transition: none;
+    }
 
-.imgindex1 {
-    grid-area: imgindex1;
+    .imgstory:hover {
+        transform: none;
+    }
 
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    .textindex {
+        display: none;
+    }
 
-}
+    .video__index {
+        width: 100%;
+        height: auto;
+        margin-right: 0;
+    }
 
+    .img__index {
+        width: 90%;
+    }
 
-.historytitle {
-    grid-area: historytitle;
-}
-
-.history1 {
-    grid-area: history1;
-
-}
-
-.history2 {
-    grid-area: history2;
-    width: 80%;
-}
-
-.history3 {
-    grid-area: history3;
-}
-
-.imgstory {
-    grid-area: imgstory;
-
-
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    width: 80%;
-    transition: .7s;
-}
-
-.ascensiontitle {
-    grid-area: ascensiontitle;
-} */
-
-/*============= termina el grid============= */
-
-
-/* =============título con imagen del index =============*/
-/* .overlay__index {
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    opacity: 0;
-    transition: .5s;
-    background: rgb(183, 255, 254);
-    background: radial-gradient(circle, rgba(183, 255, 254, 0.15730042016806722) 0%, rgba(104, 216, 214, 1) 100%);
-}
-
-.titleindex:hover .overlay__index {
-    opacity: 1;
-}
-
-.title_main--index {
-    font-family: 'Courgette', cursive;
-    font-size: 3.5rem;
-    margin: 0;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-
-
-
-.img__index {
-    background: rgb(25, 177, 179);
-    background: linear-gradient(142deg, rgba(25, 177, 179, 1) 0%, rgba(183, 255, 254, 1) 100%);
-    border-radius: 20px;
-    padding: .5rem;
-    width: 60%;
-}
-
-
-.video__index {
-    background: rgb(25, 177, 179);
-    background: linear-gradient(142deg, rgba(25, 177, 179, 1) 0%, rgba(183, 255, 254, 1) 100%);
-    border-radius: 2rem;
-    padding: .5rem;
-    margin-right: 1.5rem;
-}
-
-.paragraph__index {
-    background-color: antiquewhite;
-    font-style: italic;
-    text-align: justify;
-    font-size: 1.5rem;
-    padding: 3rem;
-    width: 90%;
-}
-
-
-.titleStory {
-    font-family: 'Courgette', cursive;
-    font-size: 2.5rem;
-    text-align: center;
-    padding: 2rem;
-    margin-top: 1rem;
-    margin-bottom: 3rem;
-    background-color: rgb(196, 255, 249);
-}
-
-.textStory {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: justify;
-    font-size: 1.4rem;
-    padding: 1rem;
-    margin-left: 2rem;
-    margin-right: 2rem;
-}
-
-.imgstory:hover {
-    transform: scale(1.2);
-} */
-
-
-
-
-/* ========================= MQ DE ARMAS.HTML ========================  */
+    /* ========================= MQ DE ARMAS.HTML ========================  */
     .container__weapons {
         display: flex;
         flex-direction: column;
