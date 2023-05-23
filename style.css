@@ -10,7 +10,7 @@ body {
     min-height: 100vh;
     position: relative;
     line-height: inherit;
-    overflow-x: hidden;
+    /*     overflow-x: hidden; */
 
 }
 
@@ -727,7 +727,7 @@ body footer ul li {
 }
 
 
-/*============= Para importar un elemento de Bootstrap tuve que vinculkar la galería del mismo, 
+/*============= Para importar un elemento de Bootstrap tuve que vincular la galería del mismo, 
 por lo tanto se me modificó la pag. */
 dl,
 ol,
@@ -777,6 +777,48 @@ h5 {
 
 
 
+
+
+/* ================ 404 ERROR =================*/
+.container__error {
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: min-content min-content min-content min-content;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+        "title_error title_error title_error title_error"
+        ". img_error img_error ."
+        "text_error text_error text_error text_error"
+        ". button_error button_error .";
+}
+
+.title_error {
+    grid-area: title_error;
+}
+
+.img_error {
+    grid-area: img_error;
+
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding-top: 2rem;
+}
+
+.text_error {
+    grid-area: text_error;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding: 2rem 0 2rem 0;
+}
+
+.button_error {
+    grid-area: button_error;
+    display: flex;
+    justify-content: center;
+}
 
 
 
@@ -870,13 +912,13 @@ h5 {
     }
 
     .titleindex {
-        position:inherit;
-        border-bottom:  none;
+        position: inherit;
+        border-bottom: none;
         width: 80%;
     }
 
     .overlay__index {
-display: none;
+        display: none;
     }
 
     .historytitle {
