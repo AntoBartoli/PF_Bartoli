@@ -1,0 +1,926 @@
+@import "_fontsandcolors";
+@import "_footer";
+@import "_header";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* =====Oculta contenido que es para el MQ mobile ========*/
+.desktop {
+    display: block;
+}
+
+.mobile {
+    display: none;
+}
+
+.title_main {
+    font-family: $title-font;
+    text-align: center;
+    font-size: 3.5rem;
+    padding-top: 4rem;
+    padding-bottom: 5rem;
+    margin: 0;
+}
+
+body {
+    background-color: $primary-color;
+    font-family: $text-font;
+    min-height: 100vh;
+    position: relative;
+    line-height: inherit;
+    /*     overflow-x: hidden; */
+
+    main {
+        padding-bottom: 15rem;
+
+        /* =============INDEX============= */
+        .container__index {
+            display: grid;
+            grid-template-columns: 50% 50%;
+            grid-template-rows: min-content min-content min-content;
+            gap: 0px 0px;
+            grid-auto-flow: row;
+            grid-template-areas:
+                "titleindex titleindex"
+                "historytitle historytitle"
+                "history1 history1"
+                "history2 imgstory"
+                "history3 history3"
+                "textindex videoindex"
+                "ascensiontitle ascensiontitle"
+                "imgindex1 imgindex1";
+
+        }
+
+        .titleindex {
+            grid-area: titleindex;
+
+            display: flex;
+            justify-content: center;
+            position: relative;
+            text-align: center;
+            margin-bottom: 1rem;
+            border-bottom: 3px solid white;
+        }
+
+        .textindex {
+            grid-area: textindex;
+
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        .videoindex {
+            grid-area: videoindex;
+
+            display: flex;
+            justify-content: center;
+
+        }
+
+        .imgindex1 {
+            grid-area: imgindex1;
+
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+        }
+
+        .historytitle {
+            grid-area: historytitle;
+        }
+
+        .history1 {
+            grid-area: history1;
+
+        }
+
+        .history2 {
+            grid-area: history2;
+            width: 80%;
+        }
+
+        .history3 {
+            grid-area: history3;
+        }
+
+        .imgstory {
+            grid-area: imgstory;
+
+
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            width: 80%;
+            transition: .7s;
+        }
+
+        .ascensiontitle {
+            grid-area: ascensiontitle;
+        }
+
+        /*============= termina el grid============= */
+        /* =============título con imagen del index =============*/
+        .overlay__index {
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            opacity: 0;
+            transition: .5s;
+            background: rgb(183, 255, 254);
+            background: $overlay-gradient-color;
+        }
+
+        .titleindex:hover .overlay__index {
+            opacity: 1;
+        }
+
+        .title_main--index {
+            font-family: $title-font;
+            font-size: 3.5rem;
+            margin: 0;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+
+        .img__index {
+            background: rgb(25, 177, 179);
+            background: $border-gradient-color;
+            border-radius: 20px;
+            padding: .5rem;
+            width: 60%;
+        }
+
+
+        .video__index {
+            background: rgb(25, 177, 179);
+            background: $border-gradient-color;
+            border-radius: 2rem;
+            padding: .5rem;
+            margin-right: 1.5rem;
+        }
+
+        .paragraph__index {
+            background-color: $textbox-color;
+            font-style: italic;
+            text-align: justify;
+            font-size: 1.5rem;
+            padding: 3rem;
+            width: 90%;
+        }
+
+
+        .titleStory {
+            font-family: $title-font;
+            font-size: 2.5rem;
+            text-align: center;
+            padding: 2rem;
+            margin-top: 1rem;
+            margin-bottom: 3rem;
+            background-color: $header-color;
+        }
+
+        .textStory {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            text-align: justify;
+            font-size: 1.4rem;
+            padding: 1rem;
+            margin-left: 2rem;
+            margin-right: 2rem;
+        }
+
+        .imgstory:hover {
+            transform: scale(1.2);
+        }
+
+        /* =============ARTEFACTOS.HTML =============*/
+
+        .container__artifacts {
+            display: grid;
+            grid-template-columns: 50% 50%;
+            grid-template-rows: min-content min-content min-content min-content min-content min-content min-content;
+            gap: 0px 0px;
+            grid-auto-flow: row;
+            grid-template-areas:
+                "titleartifacts titleartifacts"
+                "artifact1 artifact1"
+                "artifact2 artifact3"
+                "artifact4 artifact5"
+                "artifactStats artifactStats"
+                "subtitleartifact subtitleartifact"
+                "videoartifact videoartifact";
+        }
+
+        .titleartifacts {
+            grid-area: titleartifacts;
+        }
+
+        .artifact1 {
+            grid-area: artifact1;
+
+            display: flex;
+            justify-content: center;
+        }
+
+        .artifact2 {
+            grid-area: artifact2;
+            display: flex;
+            justify-content: center;
+        }
+
+        .artifact3 {
+            grid-area: artifact3;
+            display: flex;
+            justify-content: center;
+        }
+
+        .artifact4 {
+            grid-area: artifact4;
+            display: flex;
+            justify-content: center;
+        }
+
+        .artifact5 {
+            grid-area: artifact5;
+            display: flex;
+            justify-content: center;
+        }
+
+        .artifactStats {
+            grid-area: artifactStats;
+            display: flex;
+            justify-content: center;
+        }
+
+        .subtitleartifact {
+            grid-area: subtitleartifact;
+
+        }
+
+        .videoartifact {
+            grid-area: videoartifact;
+            display: flex;
+            justify-content: center;
+        }
+
+
+
+        .border__artifacts {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            align-items: center;
+            width: 70%;
+            border: solid 3px white;
+            padding: 2rem;
+            margin: 3rem;
+            background: rgb(183, 255, 254);
+            background: $artifact-border-color;
+        }
+
+        .border__artifacts--principal {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            width: 70%;
+            border: solid 3px white;
+            padding: 2rem;
+            margin: 3rem;
+            background: rgb(183, 255, 254);
+            background: $artifact-border-color;
+        }
+
+        .border__artifacts--stats {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            border: solid 3px white;
+            padding: 2rem;
+            margin-bottom: 4rem;
+            background: rgb(183, 255, 254);
+            background: $artifact-border-color;
+        }
+
+
+        .subtitle__artifacts {
+            text-decoration: underline;
+            text-align: center;
+            font-size: 2rem;
+            padding: 1rem;
+        }
+
+        .text__artifacts {
+            font-style: italic;
+            text-align: justify;
+            font-size: 1.5rem;
+            padding: 2rem;
+        }
+
+        .title__video--artifacts {
+            font-family: $title-font;
+            font-size: 2.5rem;
+            text-align: center;
+            padding: 2rem;
+            margin-top: 1rem;
+            margin-bottom: 3rem;
+            background-color: $header-color;
+        }
+
+        .video__artifacts {
+            background: rgb(25, 177, 179);
+            background: $border-gradient-color;
+            border-radius: 30px;
+            padding: 1rem;
+        }
+
+
+        /* ============= ARMAS.HTML =============*/
+        /*============= Grid de armas.html =============*/
+        .container__weapons {
+            display: grid;
+            grid-template-columns: 25% 25% 25% 25%;
+            grid-template-rows: min-content min-content min-content min-content min-content min-content min-content min-content min-content min-content min-content;
+            gap: 0px 0px;
+            grid-auto-flow: row;
+            grid-template-areas:
+                ". title title ."
+                "subtitle subtitle . ."
+                "img img text1 text1"
+                "subtitle2 subtitle2 . ."
+                "img2 img2 text2 text2"
+                "subtitle3 subtitle3 . ."
+                "img3 img3 text3 text3"
+                "subtitle4 subtitle4 . ."
+                "img4 img4 text4 text4"
+                "subtitle5 subtitle5 . ."
+                "img5 img5 text5 text5";
+        }
+
+        .title {
+            grid-area: title;
+        }
+
+        .img {
+            grid-area: img;
+        }
+
+        .text1 {
+            grid-area: text1;
+        }
+
+        .img2 {
+            grid-area: img2;
+        }
+
+        .text2 {
+            grid-area: text2;
+        }
+
+        .img3 {
+            grid-area: img3;
+        }
+
+        .text3 {
+            grid-area: text3;
+        }
+
+        .img4 {
+            grid-area: img4;
+        }
+
+        .text4 {
+            grid-area: text4;
+        }
+
+        .img5 {
+            grid-area: img5;
+        }
+
+        .text5 {
+            grid-area: text5;
+        }
+
+        .subtitle {
+            grid-area: subtitle;
+        }
+
+        .subtitle2 {
+            grid-area: subtitle2;
+        }
+
+        .subtitle3 {
+            grid-area: subtitle3;
+        }
+
+        .subtitle4 {
+            grid-area: subtitle4;
+        }
+
+        .subtitle5 {
+            grid-area: subtitle5;
+        }
+
+
+        .subtitle__weapons {
+            text-decoration: underline;
+            text-align: left;
+            font-size: 2rem;
+            padding-left: 10rem;
+            padding-top: 5rem;
+        }
+
+        .text__weapons {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            border: 5px solid $border-color;
+            text-align: justify;
+            font-size: 1.3rem;
+            padding: 2rem;
+            margin-right: 2rem;
+        }
+
+        .img__weapons {
+            display: flex;
+            border: 2px solid $border-color;
+            margin: 2rem 2rem 2rem 10rem;
+            width: 50%;
+        }
+
+
+
+        /*============= EQUIPOS.HTML =============*/
+        .container__teams {
+            display: grid;
+            grid-template-columns: 50% 50%;
+            grid-template-rows: min-content min-content min-content min-content min-content min-content min-content;
+            gap: 0px 0px;
+            grid-auto-flow: row;
+            grid-template-areas:
+                "titleTeams titleTeams"
+                "nameteam1 ."
+                "team1 team1"
+                "nameteam2 ."
+                "team2 team2"
+                "nameteam3 ."
+                "team3 team3";
+        }
+
+        .titleTeams {
+            grid-area: titleTeams;
+        }
+
+        .nameteam1 {
+            grid-area: nameteam1;
+        }
+
+        .team1 {
+            grid-area: team1;
+            display: flex;
+            justify-content: center;
+        }
+
+        .nameteam2 {
+            grid-area: nameteam2;
+        }
+
+        .team2 {
+            grid-area: team2;
+            display: flex;
+            justify-content: center;
+        }
+
+        .nameteam3 {
+            grid-area: nameteam3;
+        }
+
+        .team3 {
+            grid-area: team3;
+            display: flex;
+            justify-content: center;
+        }
+
+
+        .subtitle__teams {
+            display: flex;
+            justify-content: center;
+            text-decoration: underline;
+            font-size: 2rem;
+            padding: 1rem;
+        }
+
+        .img__teams {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            flex-wrap: wrap;
+            width: 70%;
+            margin-bottom: 4rem;
+            border: 2px solid white;
+            background: rgb(183, 255, 254);
+            background: radial-gradient(circle, rgba(183, 255, 254, 0) 0%, rgba(25, 177, 179, 1) 100%);
+        }
+
+
+        /*============= CONTACTO.HTML =============*/
+        .text__form {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            text-align: justify;
+            padding: 4rem;
+            margin-right: 3rem;
+
+        }
+
+        .button__form {
+            background-color: $header-color;
+            border-radius: 15px;
+            color: $darkblue-color;
+            border: 2px solid $darkblue-color;
+            padding: 1rem 2rem;
+            text-align: center;
+            text-decoration: none;
+            font-size: 1.2rem;
+            cursor: pointer;
+            transition-duration: 0.4s;
+        }
+
+        .button2__form:hover {
+            box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+        }
+
+
+        .link__form {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            font-weight: bold;
+            font-size: 1.5rem;
+            list-style-type: none;
+            padding-top: 1rem;
+        }
+
+        .form__center {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+
+        .fieldset__contact {
+            display: flex;
+            flex-direction: column;
+            border: solid 4px white;
+            padding: 1rem;
+            border-style: groove;
+            width: 50rem;
+            background: rgb(25, 177, 179);
+            background: $border-gradient-color;
+        }
+
+        .subtitle__contact {
+            display: inline-block;
+            border-radius: 20px;
+            text-decoration: underline;
+            font-size: 2rem;
+            border: solid 2px white;
+            padding: 1rem;
+        }
+
+        /* ================ 404 ERROR =================*/
+        .container__error {
+            display: grid;
+            grid-template-columns: 25% 25% 25% 25%;
+            grid-template-rows: min-content min-content min-content min-content;
+            gap: 0px 0px;
+            grid-auto-flow: row;
+            grid-template-areas:
+                "title_error title_error title_error title_error"
+                ". img_error img_error ."
+                "text_error text_error text_error text_error"
+                ". button_error button_error .";
+        }
+
+        .title_error {
+            grid-area: title_error;
+        }
+
+        .img_error {
+            grid-area: img_error;
+
+            display: flex;
+            justify-content: center;
+            width: 100%;
+            padding-top: 2rem;
+        }
+
+        .text_error {
+            grid-area: text_error;
+            display: flex;
+            justify-content: center;
+            text-align: center;
+            padding: 2rem 0 2rem 0;
+        }
+
+        .button_error {
+            grid-area: button_error;
+            display: flex;
+            justify-content: center;
+        }
+
+
+
+
+    }
+
+    /*============= Para importar un elemento de Bootstrap tuve que vincular la galería del mismo, 
+por lo tanto se me modificó la pag. */
+    dl,
+    ol,
+    ul {
+
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
+    ol,
+    ul {
+        padding-left: 0;
+    }
+
+    .h1,
+    .h2,
+    .h3,
+    .h4,
+    .h5,
+    .h6,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        margin-top: 0;
+        margin-bottom: 0.5rem;
+        font-weight: bold;
+        line-height: 1.2;
+        color: var(--bs-heading-color, inherit);
+    }
+
+    .h5,
+    h5 {
+        font-size: inherit;
+    }
+
+    .row {
+        --bs-gutter-x: 0;
+        --bs-gutter-y: 0;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    /*========== Hasta acá se editó los cambios que efectuó Bootstrap en la página */
+
+}
+
+/* ========================== MEDIA QUERIES - Mobile ==========================
+--------------------------------------------------------------------------------*/
+@media screen and (max-width: 425px) {
+
+    body {
+        .desktop {
+            display: none;
+        }
+
+        .mobile {
+            display: block;
+        }
+
+        /* ============ Header ============  */
+        header {
+            padding: 0;
+            position: fixed;
+            width: 100%;
+
+            .topnav {
+                overflow: hidden;
+                background-color: $primary-color;
+                position: relative;
+
+                #linksMenu {
+                    display: none;
+                    border-bottom: 3px solid $header-color;
+                }
+
+                .active {
+                    background-color: $header-color;
+                    font-weight: bold;
+                }
+
+                a {
+                    color: $dark-color;
+                    padding: 14px 16px;
+                    text-decoration: none;
+                    font-size: 17px;
+                    display: block;
+
+                    &.icon {
+                        background-color: $header-color;
+                        display: block;
+                        position: absolute;
+                        right: 0;
+                        top: 0;
+                    }
+
+                    &:hover {
+                        background-color: $primary-color;
+                        color: $dark-color;
+                    }
+                }
+            }
+        }
+
+        main {
+            padding-top: 4rem;
+            padding-bottom: 5rem;
+
+            /* ========================= MQ DE INDEX.HTML ========================  */
+            .container__index {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .titleindex {
+                position: inherit;
+                border-bottom: none;
+                width: 80%;
+            }
+
+            .overlay__index {
+                display: none;
+            }
+
+            .historytitle {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+            }
+
+            .history1 {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+
+            }
+
+            .textStory {
+                margin-left: 0;
+                margin-right: 0;
+                padding: 1;
+            }
+
+            .titleStory {
+                font-size: 2rem;
+                padding: 1rem;
+                margin-bottom: 2rem;
+            }
+
+            .history2 {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                width: 100%;
+            }
+
+            .imgstory {
+                transition: none;
+            }
+
+            .imgstory:hover {
+                transform: none;
+            }
+
+            .textindex {
+                display: none;
+            }
+
+            .video__index {
+                width: 100%;
+                height: auto;
+                margin-right: 0;
+            }
+
+            .img__index {
+                width: 90%;
+            }
+
+            /* ========================= MQ DE ARMAS.HTML ========================  */
+            .container__weapons {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .title_main {
+                font-family: $title-font;
+                text-align: center;
+                font-size: 2.5rem;
+                padding: 1rem;
+            }
+
+            .subtitle__weapons {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                text-align: center;
+                font-size: 1.5rem;
+                padding: 2rem;
+            }
+
+            .text__weapons {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                border: 0;
+                text-align: justify;
+                font-size: 1.3rem;
+                padding: 1rem;
+                margin: 1rem;
+
+            }
+
+
+            .img {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .img2 {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .img3 {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .img4 {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .img5 {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .img__weapons {
+                padding: 2px;
+                background-color: $border-color;
+                width: 50%;
+                margin: 0%;
+            }
+        }
+
+        /* ========== Footer ===========  */
+        footer {
+            position: absolute;
+            background-color: transparent;
+            border: 0 solid white;
+            bottom: 0;
+            width: 100%;
+            height: 8rem;
+        }
+    }
+
+}
+
+@media screen and (min-width: 426px) and (max-width: 768px) {
+    
+}
