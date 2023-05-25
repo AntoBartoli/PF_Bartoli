@@ -32,7 +32,6 @@ body {
     min-height: 100vh;
     position: relative;
     line-height: inherit;
-    /*     overflow-x: hidden; */
 
     main {
         padding-bottom: 15rem;
@@ -917,6 +916,4 @@ body {
 
 /* =============================== MEDIA QUERIES - Tablet ================================
 -----------------------------------------------------------------------------------------*/
-@media screen and (min-width: 426px) and (max-width: 768px) {
-
-}
+@media screen and (min-width: 426px) and (max-width: 768px) {}
