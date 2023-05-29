@@ -196,9 +196,9 @@ body {
             justify-content: center;
             text-align: justify;
             font-size: 1.4rem;
-            padding: 1rem;
+            padding: .5rem;
             margin-left: 2rem;
-            margin-right: 2rem;
+            margin-right: 1rem;
         }
 
         .imgstory:hover {
@@ -317,7 +317,6 @@ body {
 
 
         .subtitle__artifacts {
-            text-decoration: underline;
             text-align: center;
             font-size: 2rem;
             padding: 1rem;
@@ -436,7 +435,6 @@ body {
 
 
         .subtitle__weapons {
-            text-decoration: underline;
             text-align: left;
             font-size: 2rem;
             padding-left: 10rem;
@@ -532,7 +530,7 @@ body {
             margin-bottom: 4rem;
             border: 2px solid $border-color;
             background: rgb(183, 255, 254);
-            background: radial-gradient(circle, rgba(183, 255, 254, 0) 0%, rgba(25, 177, 179, 1) 100%);
+            background: $artifact-border-color;
         }
 
 
@@ -577,8 +575,9 @@ body {
 
         .form__center {
             display: flex;
-            align-items: center;
+            flex-direction: column;
             justify-content: center;
+            align-items: center;
         }
 
 
@@ -625,7 +624,7 @@ body {
             display: flex;
             justify-content: center;
             width: 100%;
-            padding-top: 2rem;
+            padding: 1rem 3rem 1rem 3rem;
         }
 
         .text_error {
@@ -633,7 +632,7 @@ body {
             display: flex;
             justify-content: center;
             text-align: center;
-            padding: 2rem 0 2rem 0;
+            padding: 2rem;
         }
 
         .button_error {
@@ -788,7 +787,7 @@ body {
             .textStory {
                 margin-left: 0;
                 margin-right: 0;
-                padding: 1;
+                padding: 1rem;
             }
 
             .titleStory {
@@ -908,6 +907,171 @@ body {
                 width: 50%;
                 margin: 0%;
             }
+
+            /* ========================= MQ DE ARTEFACTOS.HTML ========================  */
+
+            .container__artifacts {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+
+
+            .artifact1 img {
+                width: 50%;
+            }
+
+            .artifact2 img {
+                width: 50%;
+            }
+
+            .artifact3 img {
+                width: 50%;
+            }
+
+            .artifact4 img {
+                width: 50%;
+            }
+
+            .artifact5 img {
+                width: 50%;
+            }
+
+            .videoartifact {
+                width: 90%;
+                height: auto;
+            }
+
+
+
+            .border__artifacts {
+                justify-content: center;
+                align-items: center;
+                width: 70%;
+                border: solid 2px $border-color;
+                padding: .5rem;
+                margin: 1.5rem;
+            }
+
+            .border__artifacts--principal {
+                width: 70%;
+                border: solid 2px $border-color;
+                padding: .5rem;
+                margin: 1.5rem;
+            }
+
+            .border__artifacts--stats {
+                justify-content: center;
+                border: solid 2px $border-color;
+                padding: 1.5rem;
+                margin: 1.5rem;
+            }
+
+
+            .subtitle__artifacts {
+                text-align: center;
+                font-size: 1.5rem;
+                padding: .5rem;
+            }
+
+            .text__artifacts {
+                font-style: normal;
+                text-align: justify;
+                font-size: 1.1rem;
+                padding: 0 2rem 0 2rem;
+            }
+
+            .title__video--artifacts {
+                font-size: 2rem;
+            }
+
+            .video__artifacts {
+                background: rgb(25, 177, 179);
+                background: $border-gradient-color;
+                border-radius: 30px;
+                padding: .5rem;
+            }
+
+            /*========================= MQ DE CONTACTO.HTML =========================*/
+            .row {
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .container {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .text__form {
+                padding: 1.8rem;
+                margin-right: 0;
+
+            }
+
+            .button__form {
+
+                border-radius: 15px;
+                padding: .5rem 1rem;
+                font-size: 1rem;
+            }
+
+            .fieldset__contact {
+                justify-content: center;
+                align-items: center;
+                width: 100%;
+                margin: 1rem 0 1rem 0;
+            }
+
+            .subtitle__contact {
+                border-radius: 15px;
+                font-size: 1.5rem;
+            }
+
+            /*========================= MQ DE EQUIPOS.HTML =========================*/
+            .container__teams {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+
+
+            .team1 {
+                img {
+                    width: 50%;
+                }
+            }
+
+            .team2 {
+                img {
+                    width: 50%;
+                }
+            }
+
+            .team3 {
+                img {
+                    width: 50%;
+                }
+            }
+
+
+            .subtitle__teams {
+                font-size: 1.5rem;
+                padding: .5rem;
+            }
+
+            .img__teams {
+                width: 90%;
+                margin-bottom: 3rem;
+                border: 2px solid $border-color;
+            }
+
         }
 
         /* ========================= Footer =========================  */
@@ -1018,7 +1182,7 @@ body {
             .textStory {
                 margin-left: 0;
                 margin-right: 0;
-                padding: 1;
+                padding: 1.5rem;
             }
 
             .titleStory {
@@ -1065,6 +1229,259 @@ body {
             .img__index {
                 width: 90%;
             }
+
+            /* ========================= MQ DE ARMAS.HTML ========================  */
+            .container__weapons {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .title_main {
+                font-family: $title-font;
+                text-align: center;
+                font-size: 3rem;
+                padding: 1rem;
+            }
+
+            .subtitle__weapons {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                text-align: center;
+                font-size: 1.8rem;
+                padding: 2rem;
+            }
+
+            .text__weapons {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                border: 0;
+                text-align: justify;
+                font-size: 1.3rem;
+                padding: 1.5rem;
+                margin: 1rem;
+
+            }
+
+
+            .img {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+
+            }
+
+            .img2 {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .img3 {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .img4 {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .img5 {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .img__weapons {
+                padding: 2px;
+                background-color: $border-color;
+                width: 350px;
+                height: 350px;
+                margin: 0%;
+            }
+
+            /* ========================= MQ DE ARTEFACTOS.HTML ========================  */
+
+            .container__artifacts {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+
+
+            .artifact1 img {
+                width: 50%;
+            }
+
+            .artifact2 {
+                width: 100%;
+
+                img {
+                    width: 50%;
+                }
+            }
+
+            .artifact3 {
+                width: 100%;
+
+                img {
+                    width: 50%;
+                }
+            }
+
+            .artifact4 {
+                width: 100%;
+
+                img {
+                    width: 50%;
+                }
+            }
+
+            .artifact5 {
+                width: 100%;
+
+                img {
+                    width: 50%;
+                }
+            }
+
+            .videoartifact {
+                width: 90%;
+                height: auto;
+            }
+
+            .subtitleartifact {
+                width: 100%;
+            }
+
+
+            .border__artifacts {
+                justify-content: center;
+                align-items: center;
+                width: 70%;
+                border: solid 2px $border-color;
+                padding: .5rem;
+                margin: 1.5rem;
+            }
+
+            .border__artifacts--principal {
+                width: 70%;
+                border: solid 2px $border-color;
+                padding: .5rem;
+                margin: 1.5rem;
+            }
+
+            .border__artifacts--stats {
+                width: 70%;
+                justify-content: center;
+                border: solid 2px $border-color;
+                padding: 0;
+                margin: 1.5rem;
+            }
+
+
+            .subtitle__artifacts {
+                text-align: center;
+                font-size: 1.5rem;
+                padding: .5rem;
+            }
+
+            .text__artifacts {
+                font-style: normal;
+                text-align: justify;
+                font-size: 1.1rem;
+                padding: 0 2rem 0 2rem;
+            }
+
+            .title__video--artifacts {
+                font-size: 2rem;
+            }
+
+            .video__artifacts {
+                background: rgb(25, 177, 179);
+                background: $border-gradient-color;
+                border-radius: 30px;
+                padding: .5rem;
+            }
+
+            /*========================= MQ DE CONTACTO.HTML =========================*/
+            .row {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .text__form {
+                padding: 3rem;
+                margin-right: 0;
+            }
+
+            .button__form {
+                border-radius: 18px;
+                padding: .8rem 1.2rem;
+                font-size: 1.2rem;
+            }
+
+            .fieldset__contact {
+                justify-content: center;
+                align-items: center;
+                width: 100%;
+                margin: 1rem 0 1rem 0;
+            }
+
+            .subtitle__contact {
+                border-radius: 15px;
+                font-size: 1.5rem;
+            }
+
+            /*========================= MQ DE EQUIPOS.HTML =========================*/
+            .container__teams {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+
+
+            .team1 {
+                img {
+                    width: 40%;
+                }
+            }
+
+            .team2 {
+                img {
+                    width: 40%;
+                }
+            }
+
+            .team3 {
+                img {
+                    width: 40%;
+                }
+            }
+
+
+            .subtitle__teams {
+                font-size: 1.8rem;
+                padding: .8rem;
+            }
+
+            .img__teams {
+                width: 80%;
+                justify-content: space-evenly;
+                margin-bottom: 3rem;
+                border: 2px solid $border-color;
+            }
+
         }
 
         /* ========================= Footer =========================  */
@@ -1078,5 +1495,349 @@ body {
         }
 
 
+    }
+}
+
+/* =============================== MEDIA QUERIES - Laptop ================================
+-----------------------------------------------------------------------------------------*/
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    body {
+
+        main {
+            padding-top: 3rem;
+            padding-bottom: 12rem;
+
+            /* ========================= MQ DE INDEX.HTML ========================  */
+            .container__index {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .titleindex {
+                position: inherit;
+                border-bottom: none;
+            }
+
+            .overlay__index {
+                display: none;
+            }
+
+            .historytitle {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                width: 100%;
+            }
+
+            .history1 {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+
+            }
+
+            .textStory {
+                margin-left: 0;
+                margin-right: 0;
+                padding: 1.5rem 1.5rem 0 1.5rem;
+            }
+
+            .titleStory {
+                font-size: 2.5rem;
+                padding: 1rem;
+                margin-bottom: 2rem;
+            }
+
+            .history2 {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                width: 100%;
+            }
+
+            .imgstory {
+                width: 70%;
+                transition: none;
+            }
+
+            .imgstory:hover {
+                transform: none;
+            }
+
+            .textindex {
+                display: none;
+            }
+
+            .videoindex {
+                width: 90%;
+                height: auto;
+            }
+
+            .video__index {
+                margin: 1rem 0 1.5rem 0;
+            }
+
+            .ascensiontitle {
+                width: 100%;
+            }
+
+            .img__index {
+                width: 90%;
+            }
+
+            /* ========================= MQ DE ARMAS.HTML ========================  */
+            .container__weapons {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .title_main {
+                font-family: $title-font;
+                text-align: center;
+                font-size: 3.2rem;
+                padding: 1rem;
+            }
+
+            .subtitle__weapons {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                text-align: center;
+                font-size: 1.8rem;
+                padding: 2rem;
+            }
+
+            .text__weapons {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                border: 0;
+                text-align: justify;
+                font-size: 1.3rem;
+                padding: 2rem;
+                margin: 1rem;
+
+            }
+
+
+            .img {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .img2 {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .img3 {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .img4 {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .img5 {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .img__weapons {
+                padding: 2px;
+                background-color: $border-color;
+                width: 400px;
+                height: 400px;
+                margin: 0%;
+            }
+
+            /* ========================= MQ DE ARTEFACTOS.HTML ========================  */
+
+            .container__artifacts {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+
+
+            .artifact1 img {
+                width: 30%;
+            }
+
+            .artifact2 {
+                width: 100%;
+
+                img {
+                    width: 30%;
+                }
+            }
+
+            .artifact3 {
+                width: 100%;
+
+                img {
+                    width: 30%;
+                }
+            }
+
+            .artifact4 {
+                width: 100%;
+
+                img {
+                    width: 30%;
+                }
+            }
+
+            .artifact5 {
+                width: 100%;
+
+                img {
+                    width: 30%;
+                }
+            }
+
+            .videoartifact {
+                width: 90%;
+                height: auto;
+            }
+
+            .subtitleartifact {
+                width: 100%;
+            }
+
+
+            .border__artifacts {
+                justify-content: center;
+                align-items: center;
+                width: 70%;
+                border: solid 3px $border-color;
+                padding: .5rem;
+                margin: 1.5rem;
+            }
+
+            .border__artifacts--principal {
+                width: 70%;
+                border: solid 3px $border-color;
+                padding: .5rem;
+                margin: 1.5rem;
+            }
+
+            .border__artifacts--stats {
+                width: 100%;
+                justify-content: center;
+                border: solid 3px $border-color;
+                padding: 1rem;
+                margin: 1.5rem;
+            }
+
+
+            .subtitle__artifacts {
+                text-align: center;
+                font-size: 1.8rem;
+                padding: 1rem;
+            }
+
+            .text__artifacts {
+                font-style: normal;
+                text-align: justify;
+                font-size: 1.3rem;
+                padding: 0 2rem 0 2rem;
+            }
+
+            .title__video--artifacts {
+                font-size: 2.5rem;
+            }
+
+            .video__artifacts {
+                background: rgb(25, 177, 179);
+                background: $border-gradient-color;
+                border-radius: 30px;
+                padding: .5rem;
+            }
+
+            /*========================= MQ DE CONTACTO.HTML =========================*/
+            .row {
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .text__form {
+                padding: 1.8rem;
+                margin-right: 0;
+            }
+
+            .button__form {
+                border-radius: 15px;
+                padding: 1rem 1.2rem;
+                font-size: 1.1rem;
+            }
+
+            .fieldset__contact {
+                justify-content: center;
+                align-items: center;
+                width: 100%;
+                margin: 1rem 0 1rem 0;
+            }
+
+            .subtitle__contact {
+                border-radius: 15px;
+                font-size: 1.5rem;
+            }
+
+            /*========================= MQ DE EQUIPOS.HTML =========================*/
+            .container__teams {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+
+
+            .team1 {
+                img {
+                    width: 35%;
+                }
+            }
+
+            .team2 {
+                img {
+                    width: 35%;
+                }
+            }
+
+            .team3 {
+                img {
+                    width: 35%;
+                }
+            }
+
+
+            .subtitle__teams {
+                font-size: 2rem;
+                padding: 1.2rem;
+            }
+
+            .img__teams {
+                width: 75%;
+                justify-content: space-evenly;
+                margin-bottom: 3rem;
+                border: 2px solid $border-color;
+            }
+        }
     }
 }

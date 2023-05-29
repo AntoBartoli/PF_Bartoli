@@ -6,7 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="../img/1946_anemo.png">
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script type="text/javascript" src="../../scripts.js"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css">
 
     <link rel="stylesheet" href="../../css/main.css">
@@ -18,8 +19,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
 
-    <meta name="description"
-        content="En esta sección encontrarás los artefactos recomendados para Venti.">
+    <meta name="description" content="En esta sección encontrarás los artefactos recomendados para Venti.">
     <meta name="keywords" content="barbatos, venti, builds, weapons, arconte anemo, artifacts, teams comp, artefactos">
 
     <meta property="og:title" content="Mejores Artefactos para Venti">
@@ -34,18 +34,38 @@
 <body>
 
     <header>
-        <a href="../../index.html">
-            <img class="logo" src="../img/venti_logo.png" alt="">
-        </a>
-        <nav>
-            <ul>
-                <li><a href="../../index.html">Inicio</a></li>
-                <li><a class="active" href="#">Artefactos</a></li>
-                <li><a href="./armas.html">Armas</a></li>
-                <li><a href="./equipos.html">Equipos</a></li>
-                <li><a href="./contacto.html">Contacto</a></li>
-            </ul>
-        </nav>
+        <div class="desktop">
+            <a href="../../index.html">
+                <img class="logo" src="../img/venti_logo.png" alt="">
+            </a>
+            <nav>
+                <ul>
+                    <li><a href="../../index.html">Inicio</a></li>
+                    <li><a class="active" href="#">Artefactos</a></li>
+                    <li><a href="./armas.html">Armas</a></li>
+                    <li><a href="./equipos.html">Equipos</a></li>
+                    <li><a href="./contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+
+
+        <div class="mobile">
+            <div class="topnav">
+                <a href="../../index.html" class="active">Hey, Traveler!</a>
+                <div id="linksMenu">
+                    <a href="../../index.html">Inicio</a>
+                    <a class="active" href="#">Artefactos</a>
+                    <a href="./armas.html">Armas</a>
+                    <a href="./equipos.html">Equipos</a>
+                    <a href="./contacto.html">Contacto</a>
+                </div>
+                <a href="javascript:void(0);" class="icon" onclick="menuMobile()">
+                    <i class="fa fa-bars"></i>
+                </a>
+            </div>
+        </div>
+
     </header>
 
 
@@ -63,7 +83,7 @@
                         <h2 class="subtitle__artifacts">Sombra Verde Esmeralda</h2>
                         <img src="../img/verde-esmeralda.png" alt="Artefacto Sombra Verde Esmeralda">
 
-                        <p class="text__artifacts"><u>Conjunto de 4 piezas:</u>aumenta el DAÑO de Torbellino en un
+                        <p class="text__artifacts"><u>Conjunto de 4 piezas:</u> aumenta el DAÑO de Torbellino en un
                             60%.
                             Reduce
                             la RES elemental del oponente al elemento infundido en el Torbellino en un 40% durante
@@ -112,7 +132,8 @@
                     <div class="border__artifacts">
                         <h2 class="subtitle__artifacts">Sueños Áureos</h2>
                         <img src="../img/gilded_dream.png" alt="Artefacto Sueños Áureos">
-                        <p class="text__artifacts"><u>Conjunto de 4 piezas:</u> Tras causar una Reacción Elemental, el
+                        <p class="text__artifacts desktop"><u>Conjunto de 4 piezas:</u> Tras causar una Reacción
+                            Elemental, el
                             personaje
                             que lleve equipado este
                             conjunto obtiene durante 8 s los siguientes fortalecimientos en función de los tipos
@@ -130,6 +151,13 @@
                             personajes. Este efecto solo se puede activar una vez cada 8 s, y se activará incluso cuando
                             el
                             personaje que lleva este conjunto equipado esté en tu equipo pero no en combate.</p>
+
+                        <p class="text__artifacts mobile"> <u>Conjunto de 4 piezas:</u> Tras causar una Reacción Elemental, el personaje
+                            que lleve equipado este conjunto obtiene: por cada personaje del mismo tipo elemental, el
+                            ATQ aumenta en un 14%; por cada personaje de tipo elemental distinto al portador de este
+                            conjunto, la Maestría Elemental aumenta en 50 pts. Cada uno de estos efectos se calcula para
+                            un máximo de 3 personajes. Este efecto se activará incluso cuando el personaje que lleva
+                            este conjunto equipado esté en tu equipo pero no en combate.</p>
                     </div>
                 </div>
 
@@ -164,7 +192,7 @@
     <footer>
         <div class="container__footer">
             <div class="txt footer__title">
-                <h5>Sigue a Genshin Impact en sus redes sociales para más contenido</h5>
+                <h5 class="desktop">Sigue a Genshin Impact en sus redes sociales para más contenido</h5>
             </div>
             <div class="socialmedia">
                 <ul>
