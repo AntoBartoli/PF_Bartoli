@@ -938,7 +938,7 @@ body .row {
   body main .titleindex {
     position: inherit;
     border-bottom: none;
-    width: 80%;
+    width: 100%;
   }
   body main .overlay__index {
     display: none;
