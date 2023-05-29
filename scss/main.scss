@@ -232,30 +232,71 @@ body {
 
             display: flex;
             justify-content: center;
+
+            img {
+                transition: .5s;
+            }
         }
+
+        .artifact1 img:hover {
+            transform: scale(1.2);
+        }
+
 
         .artifact2 {
             grid-area: artifact2;
             display: flex;
             justify-content: center;
+
+            img {
+                transition: .5s;
+            }
+        }
+
+        .artifact2 img:hover {
+            transform: scale(1.2);
         }
 
         .artifact3 {
             grid-area: artifact3;
             display: flex;
             justify-content: center;
+
+            img {
+                transition: .5s;
+            }
+        }
+
+        .artifact3 img:hover {
+            transform: scale(1.2);
         }
 
         .artifact4 {
             grid-area: artifact4;
             display: flex;
             justify-content: center;
+
+            img {
+                transition: .5s;
+            }
+        }
+
+        .artifact4 img:hover {
+            transform: scale(1.2);
         }
 
         .artifact5 {
             grid-area: artifact5;
             display: flex;
             justify-content: center;
+
+            img {
+                transition: .5s;
+            }
+        }
+
+        .artifact5 img:hover {
+            transform: scale(1.2);
         }
 
         .artifactStats {
@@ -943,7 +984,25 @@ body {
                 height: auto;
             }
 
+            .artifact1 img:hover {
+                transform: none;
+            }
 
+            .artifact2 img:hover {
+                transform: none;
+            }
+
+            .artifact3 img:hover {
+                transform: none;
+            }
+
+            .artifact4 img:hover {
+                transform: none;
+            }
+
+            .artifact5 img:hover {
+                transform: none;
+            }
 
             .border__artifacts {
                 justify-content: center;
@@ -1345,6 +1404,26 @@ body {
                 }
             }
 
+            .artifact1 img:hover {
+                transform: none;
+            }
+
+            .artifact2 img:hover {
+                transform: none;
+            }
+
+            .artifact3 img:hover {
+                transform: none;
+            }
+
+            .artifact4 img:hover {
+                transform: none;
+            }
+
+            .artifact5 img:hover {
+                transform: none;
+            }
+
             .videoartifact {
                 width: 90%;
                 height: auto;
@@ -1500,13 +1579,8 @@ body {
                 align-items: center;
             }
 
-            .titleindex {
-                position: inherit;
-                border-bottom: none;
-            }
-
-            .overlay__index {
-                display: none;
+            .title_main--index {
+                font-size: 2rem;
             }
 
             .historytitle {
@@ -1692,6 +1766,26 @@ body {
                 img {
                     width: 30%;
                 }
+            }
+
+            .artifact1 img:hover {
+                transform: none;
+            }
+
+            .artifact2 img:hover {
+                transform: none;
+            }
+
+            .artifact3 img:hover {
+                transform: none;
+            }
+
+            .artifact4 img:hover {
+                transform: none;
+            }
+
+            .artifact5 img:hover {
+                transform: none;
             }
 
             .videoartifact {

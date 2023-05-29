@@ -341,6 +341,14 @@ body main .artifact1 {
       -ms-flex-pack: center;
           justify-content: center;
 }
+body main .artifact1 img {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+body main .artifact1 img:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
 body main .artifact2 {
   grid-area: artifact2;
   display: -webkit-box;
@@ -349,6 +357,14 @@ body main .artifact2 {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+body main .artifact2 img {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+body main .artifact2 img:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
 }
 body main .artifact3 {
   grid-area: artifact3;
@@ -359,6 +375,14 @@ body main .artifact3 {
       -ms-flex-pack: center;
           justify-content: center;
 }
+body main .artifact3 img {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+body main .artifact3 img:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
 body main .artifact4 {
   grid-area: artifact4;
   display: -webkit-box;
@@ -368,6 +392,14 @@ body main .artifact4 {
       -ms-flex-pack: center;
           justify-content: center;
 }
+body main .artifact4 img {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+body main .artifact4 img:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
 body main .artifact5 {
   grid-area: artifact5;
   display: -webkit-box;
@@ -376,6 +408,14 @@ body main .artifact5 {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+body main .artifact5 img {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+body main .artifact5 img:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
 }
 body main .artifactStats {
   grid-area: artifactStats;
@@ -1132,6 +1172,26 @@ body .row {
     width: 90%;
     height: auto;
   }
+  body main .artifact1 img:hover {
+    -webkit-transform: none;
+            transform: none;
+  }
+  body main .artifact2 img:hover {
+    -webkit-transform: none;
+            transform: none;
+  }
+  body main .artifact3 img:hover {
+    -webkit-transform: none;
+            transform: none;
+  }
+  body main .artifact4 img:hover {
+    -webkit-transform: none;
+            transform: none;
+  }
+  body main .artifact5 img:hover {
+    -webkit-transform: none;
+            transform: none;
+  }
   body main .border__artifacts {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
@@ -1583,6 +1643,26 @@ body .row {
   body main .artifact5 img {
     width: 50%;
   }
+  body main .artifact1 img:hover {
+    -webkit-transform: none;
+            transform: none;
+  }
+  body main .artifact2 img:hover {
+    -webkit-transform: none;
+            transform: none;
+  }
+  body main .artifact3 img:hover {
+    -webkit-transform: none;
+            transform: none;
+  }
+  body main .artifact4 img:hover {
+    -webkit-transform: none;
+            transform: none;
+  }
+  body main .artifact5 img:hover {
+    -webkit-transform: none;
+            transform: none;
+  }
   body main .videoartifact {
     width: 90%;
     height: auto;
@@ -1735,12 +1815,8 @@ body .row {
         -ms-flex-align: center;
             align-items: center;
   }
-  body main .titleindex {
-    position: inherit;
-    border-bottom: none;
-  }
-  body main .overlay__index {
-    display: none;
+  body main .title_main--index {
+    font-size: 2rem;
   }
   body main .historytitle {
     display: -webkit-box;
@@ -1979,6 +2055,26 @@ body .row {
   }
   body main .artifact5 img {
     width: 30%;
+  }
+  body main .artifact1 img:hover {
+    -webkit-transform: none;
+            transform: none;
+  }
+  body main .artifact2 img:hover {
+    -webkit-transform: none;
+            transform: none;
+  }
+  body main .artifact3 img:hover {
+    -webkit-transform: none;
+            transform: none;
+  }
+  body main .artifact4 img:hover {
+    -webkit-transform: none;
+            transform: none;
+  }
+  body main .artifact5 img:hover {
+    -webkit-transform: none;
+            transform: none;
   }
   body main .videoartifact {
     width: 90%;
