@@ -151,7 +151,7 @@ body main {
   /*============= Grid de armas.html =============*/
   /*========================= EQUIPOS.HTML =========================*/
   /*========================= CONTACTO.HTML =========================*/
-  /* ========================= 404 ERROR =============================*/
+  /* ========================= 404 ERROR.html =============================*/
 }
 body main .container__index {
   display: grid;
@@ -1136,10 +1136,6 @@ body .row {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    width: 70%;
     border: solid 2px whitesmoke;
     padding: 0.5rem;
     margin: 1.5rem;
@@ -1159,13 +1155,11 @@ body .row {
     margin: 1.5rem;
   }
   body main .subtitle__artifacts {
-    text-align: center;
     font-size: 1.5rem;
     padding: 0.5rem;
   }
   body main .text__artifacts {
     font-style: normal;
-    text-align: justify;
     font-size: 1.1rem;
     padding: 0 2rem 0 2rem;
   }
@@ -1173,9 +1167,6 @@ body .row {
     font-size: 2rem;
   }
   body main .video__artifacts {
-    background: rgb(25, 177, 179);
-    background: linear-gradient(142deg, rgb(25, 177, 179) 0%, rgb(183, 255, 254) 100%);
-    border-radius: 30px;
     padding: 0.5rem;
   }
   body main .row {
@@ -1603,37 +1594,27 @@ body .row {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    width: 70%;
     border: solid 2px whitesmoke;
     padding: 0.5rem;
     margin: 1.5rem;
   }
   body main .border__artifacts--principal {
-    width: 70%;
     border: solid 2px whitesmoke;
     padding: 0.5rem;
     margin: 1.5rem;
   }
   body main .border__artifacts--stats {
     width: 70%;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
     border: solid 2px whitesmoke;
     padding: 0;
     margin: 1.5rem;
   }
   body main .subtitle__artifacts {
-    text-align: center;
     font-size: 1.5rem;
     padding: 0.5rem;
   }
   body main .text__artifacts {
     font-style: normal;
-    text-align: justify;
     font-size: 1.1rem;
     padding: 0 2rem 0 2rem;
   }
@@ -1641,8 +1622,6 @@ body .row {
     font-size: 2rem;
   }
   body main .video__artifacts {
-    background: rgb(25, 177, 179);
-    background: linear-gradient(142deg, rgb(25, 177, 179) 0%, rgb(183, 255, 254) 100%);
     border-radius: 30px;
     padding: 0.5rem;
   }
@@ -2012,37 +1991,24 @@ body .row {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    width: 70%;
-    border: solid 3px whitesmoke;
     padding: 0.5rem;
     margin: 1.5rem;
   }
   body main .border__artifacts--principal {
-    width: 70%;
-    border: solid 3px whitesmoke;
     padding: 0.5rem;
     margin: 1.5rem;
   }
   body main .border__artifacts--stats {
     width: 100%;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    border: solid 3px whitesmoke;
     padding: 1rem;
     margin: 1.5rem;
   }
   body main .subtitle__artifacts {
-    text-align: center;
     font-size: 1.8rem;
     padding: 1rem;
   }
   body main .text__artifacts {
     font-style: normal;
-    text-align: justify;
     font-size: 1.3rem;
     padding: 0 2rem 0 2rem;
   }
@@ -2050,8 +2016,6 @@ body .row {
     font-size: 2.5rem;
   }
   body main .video__artifacts {
-    background: rgb(25, 177, 179);
-    background: linear-gradient(142deg, rgb(25, 177, 179) 0%, rgb(183, 255, 254) 100%);
     border-radius: 30px;
     padding: 0.5rem;
   }
