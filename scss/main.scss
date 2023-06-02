@@ -1,6 +1,7 @@
 @import "_fontsandcolors";
 @import "_footer";
 @import "_header";
+@import "_404";
 
 * {
     margin: 0;
@@ -35,6 +36,8 @@ body {
 
     main {
         padding-bottom: 15rem;
+
+
 
         /* ========================= INDEX ========================= */
         .container__index {
@@ -529,8 +532,11 @@ body {
 
         .team1 {
             grid-area: team1;
+
             display: flex;
+            flex-direction: column;
             justify-content: center;
+            align-items: center;
         }
 
         .nameteam2 {
@@ -539,8 +545,11 @@ body {
 
         .team2 {
             grid-area: team2;
+
             display: flex;
+            flex-direction: column;
             justify-content: center;
+            align-items: center;
         }
 
         .nameteam3 {
@@ -549,8 +558,11 @@ body {
 
         .team3 {
             grid-area: team3;
+
             display: flex;
+            flex-direction: column;
             justify-content: center;
+            align-items: center;
         }
 
 
@@ -568,11 +580,238 @@ body {
             justify-content: space-evenly;
             flex-wrap: wrap;
             width: 70%;
-            margin-bottom: 4rem;
+            margin-bottom: 1rem;
             border: 2px solid $border-color;
             background: rgb(183, 255, 254);
             background: $artifact-border-color;
         }
+
+        .accordion {
+            font-family: 'Varela Round', sans-serif;
+            --bs-accordion-bg: rgb(196, 255, 249);
+            --bs-accordion-border-width: 2px;
+            --bs-accordion-active-bg: rgba(25, 177, 179, 1);
+            --bs-accordion-border-color: none;
+            width: 70%;
+            margin-bottom: 3rem;
+        }
+
+        .accordion-item {
+            border: none;
+        }
+
+        .accordion-button {
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+
+        .accordion-button:not(.collapsed) {
+            color: rgb(0, 8, 20);
+
+        }
+
+        /* Grid para los detalles del equipo */
+        .container__details {
+            display: grid;
+            grid-template-columns: 12.5% 12.5% 12.5% 12.5% 12.5% 12.5% 12.5% 12.5%;
+            grid-template-rows: min-content min-content;
+            gap: 30px 0px;
+            grid-auto-flow: row;
+            grid-template-areas:
+                "namedetails1 elementdetail1 namedetails2 elementdetail2 namedetails3 elementdetail3 namedetails4 elementdetail4"
+                "positiondetail1 artifactdetail1 positiondetail2 artifactdetail2 positiondetail3 artifactdetail3 positiondetail4 artifactdetail4";
+        }
+
+        .namedetails1 {
+            grid-area: namedetails1;
+
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: end;
+            margin-right: 1rem;
+        }
+
+        .namedetails2 {
+            grid-area: namedetails2;
+
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: end;
+            margin-right: 1rem;
+        }
+
+        .namedetails3 {
+            grid-area: namedetails3;
+
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: end;
+            margin-right: 1rem;
+        }
+
+        .namedetails4 {
+            grid-area: namedetails4;
+
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: end;
+            margin-right: 1rem;
+        }
+
+        .elementdetail1 {
+            grid-area: elementdetail1;
+
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: start;
+
+            img {
+                width: 45%;
+            }
+
+        }
+
+        .elementdetail2 {
+            grid-area: elementdetail2;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: start;
+
+            img {
+                width: 45%;
+            }
+        }
+
+        .elementdetail3 {
+            grid-area: elementdetail3;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: start;
+
+            img {
+                width: 45%;
+            }
+        }
+
+        .elementdetail4 {
+            grid-area: elementdetail4;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: start;
+
+            img {
+                width: 45%;
+            }
+        }
+
+        .positiondetail1 {
+            grid-area: positiondetail1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: end;
+            margin-right: 1rem;
+
+            h3 {
+                font-size: 26px;
+            }
+        }
+
+        .positiondetail2 {
+            grid-area: positiondetail2;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: end;
+            margin-right: 1rem;
+
+            h3 {
+                font-size: 26px;
+            }
+        }
+
+        .positiondetail3 {
+            grid-area: positiondetail3;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: end;
+            margin-right: 1rem;
+
+            h3 {
+                font-size: 26px;
+            }
+        }
+
+        .positiondetail4 {
+            grid-area: positiondetail4;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: end;
+            margin-right: 1rem;
+
+            h3 {
+                font-size: 26px;
+            }
+        }
+
+        .artifactdetail1 {
+            grid-area: artifactdetail1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: start;
+
+            img {
+                width: 50%;
+            }
+        }
+
+        .artifactdetail2 {
+            grid-area: artifactdetail2;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: start;
+
+            img {
+                width: 50%;
+            }
+        }
+
+        .artifactdetail3 {
+            grid-area: artifactdetail3;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: start;
+
+            img {
+                width: 50%;
+            }
+        }
+
+        .artifactdetail4 {
+            grid-area: artifactdetail4;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: start;
+
+            img {
+                width: 50%;
+            }
+        }
+
 
 
         /*========================= CONTACTO.HTML =========================*/
@@ -639,48 +878,6 @@ body {
             font-size: 2rem;
             border: solid 2px $border-color;
             padding: 1rem;
-        }
-
-        /* ========================= 404 ERROR.html =============================*/
-        .container__error {
-            display: grid;
-            grid-template-columns: 25% 25% 25% 25%;
-            grid-template-rows: min-content min-content min-content min-content;
-            gap: 0px 0px;
-            grid-auto-flow: row;
-            grid-template-areas:
-                "title_error title_error title_error title_error"
-                ". img_error img_error ."
-                "text_error text_error text_error text_error"
-                ". button_error button_error .";
-        }
-
-        .title_error {
-            grid-area: title_error;
-        }
-
-        .img_error {
-            grid-area: img_error;
-
-            display: flex;
-            justify-content: center;
-            width: 100%;
-            padding: 1rem 3rem 1rem 3rem;
-        }
-
-        .text_error {
-            grid-area: text_error;
-            display: flex;
-            justify-content: center;
-            text-align: center;
-            padding: 2rem;
-        }
-
-        .button_error {
-            grid-area: button_error;
-            display: flex;
-            justify-content: center;
-            font-weight: bold;
         }
 
     }

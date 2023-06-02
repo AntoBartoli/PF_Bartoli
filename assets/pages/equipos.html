@@ -6,17 +6,26 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="../img/1946_anemo.png">
+
+    <script type="text/javascript" src="../../scripts.js"></script>
+
+    <!-- libreria font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="../../css/main.css"> <!-- MAIN CSS -->
+
+    <!-- google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Courgette&display=swap" rel="stylesheet">
-    <script type="text/javascript" src="../../scripts.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="../../css/main.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
 
+    <!-- etiquetas SEO -->
     <meta name="description" content="¿No sabés con qué personajes tiene sinergía Venti? Nosotros te ayudamos.">
     <meta name="keywords" content="barbatos, venti, builds, weapons, arconte anemo, artifacts, teams comp, artefactos">
 
@@ -46,7 +55,7 @@
                 </ul>
             </nav>
         </div>
-        <div class="mobile">
+        <div class="mobile"> <!-- Navbar version mobile -->
             <div class="topnav">
                 <a href="../../index.html" class="active">Hey, Traveler!</a>
                 <div id="linksMenu">
@@ -75,6 +84,7 @@
                 <div class="nameteam1">
                     <h2 class="subtitle__teams">Ganyu Congelado</h2>
                 </div>
+
                 <div class="team1">
                     <div class="img__teams">
                         <img src="../img/ganyu_icon.png" alt="ganyu_icon">
@@ -82,12 +92,73 @@
                         <img src="../img/diona-icon.png" alt="diona-icon">
                         <img src="../img/venti_icon.png" alt="venti_icon">
                     </div>
+
+                    <!-- Acordión de Bootstrap | para mostrar "más detalles" debajo de los personajes"-->
+                    <div class="accordion">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true"
+                                    aria-controls="panelsStayOpen-collapseOne">
+                                    Detalles de Equipo:
+                                </button>
+                            </h2>
+                            <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse">
+                                <div class="accordion-body">
+                                    <div class="container__details">  <!-- Detalles del Equipo 1-->
+                                        <div class="namedetails1">
+                                            <h2>Ganyu</h2>
+                                        </div>
+                                        <div class="namedetails2">
+                                            <h2> Mona</h2>
+                                        </div>
+                                        <div class="namedetails3">
+                                            <h2>Diona</h2>
+                                        </div>
+                                        <div class="namedetails4">
+                                            <h2>Venti</h2>
+                                        </div>
+                                        <div class="elementdetail1"><img src="../img/cryo_icon.png" alt="cryo_icon">
+                                        </div>
+                                        <div class="elementdetail2"><img src="../img/hydro_icon.png" alt="hydro_icon">
+                                        </div>
+                                        <div class="elementdetail3"><img src="../img/cryo_icon.png" alt="cryo_icon">
+                                        </div>
+                                        <div class="elementdetail4"><img src="../img/anemo_icon.png" alt="anemo_icon">
+                                        </div>
+                                        <div class="positiondetail1">
+                                            <h3>Main DPS</h3>
+                                        </div>
+                                        <div class="positiondetail2">
+                                            <h3>Sub DPS</h3>
+                                        </div>
+                                        <div class="positiondetail3">
+                                            <h3>Support</h3>
+                                        </div>
+                                        <div class="positiondetail4">
+                                            <h3>Sub DPS</h3>
+                                        </div>
+                                        <div class="artifactdetail1"><img src="../img/escarcha_icon.png"
+                                                alt="Set x4 Nómada del Invierno"></div>
+                                        <div class="artifactdetail2"><img src="../img/fate_icon.png"
+                                                alt="Set x4 Emblema del Destino"></div>
+                                        <div class="artifactdetail3"><img src="../img/noblesa_icon.png"
+                                                alt="Set x4 Noblesa Obliga"></div>
+                                        <div class="artifactdetail4"><img src="../img/esmeralda_icon.png"
+                                                alt="Set x4 Verde Esmeralda">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
 
 
                 <div class="nameteam2">
                     <h2 class="subtitle__teams">Kokomi Electro-Cargado</h2>
                 </div>
+
                 <div class="team2">
                     <div class="img__teams">
                         <img src="../img/kokomi_icon.png" alt="kokomi_icon">
@@ -95,12 +166,71 @@
                         <img src="../img/yae_miko_icon.png" alt="yae_miko_icon">
                         <img src="../img/venti_icon.png" alt="venti_icon">
                     </div>
-                </div>
 
+                    <div class="accordion"> <!-- Acordión de Bootstrap -->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="true"
+                                    aria-controls="panelsStayOpen-collapseTwo">
+                                    Detalles de Equipo:
+                                </button>
+                            </h2>
+                            <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse">
+                                <div class="accordion-body">
+                                    <div class="container__details"> <!-- Detalles del Equipo 2 -->
+                                        <div class="namedetails1">
+                                            <h2>Kokomi</h2>
+                                        </div>
+                                        <div class="namedetails2">
+                                            <h2>Fischl</h2>
+                                        </div>
+                                        <div class="namedetails3">
+                                            <h2>Yae Miko</h2>
+                                        </div>
+                                        <div class="namedetails4">
+                                            <h2>Venti</h2>
+                                        </div>
+                                        <div class="elementdetail1"><img src="../img/hydro_icon.png" alt="hydro_icon">
+                                        </div>
+                                        <div class="elementdetail2"><img src="../img/electro_icon.png"
+                                                alt="electro_icon"></div>
+                                        <div class="elementdetail3"><img src="../img/electro_icon.png"
+                                                alt="electro_icon"></div>
+                                        <div class="elementdetail4"><img src="../img/anemo_icon.png" alt="anemo_icon">
+                                        </div>
+                                        <div class="positiondetail1">
+                                            <h3>Main DPS</h3>
+                                        </div>
+                                        <div class="positiondetail2">
+                                            <h3>Sub DPS</h3>
+                                        </div>
+                                        <div class="positiondetail3">
+                                            <h3>Sub DPS</h3>
+                                        </div>
+                                        <div class="positiondetail4">
+                                            <h3>Sub DPS</h3>
+                                        </div>
+                                        <div class="artifactdetail1"><img src="../img/perla_icon.png"
+                                                alt="Set x4 Perla Oceánica"></div>
+                                        <div class="artifactdetail2"><img src="../img/thunder_icon.png"
+                                                alt="Set x4 Thundering Fury"></div>
+                                        <div class="artifactdetail3"><img src="../img/thundersoother.png"
+                                                alt="Set x4 Thunder Soother"></div>
+                                        <div class="artifactdetail4"><img src="../img/esmeralda_icon.png"
+                                                alt="Set x4 Verde Esmeralda">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
                 <div class="nameteam3">
                     <h2 class="subtitle__teams">Diluc Torbellino Pyro</h2>
                 </div>
+
                 <div class="team3">
                     <div class="img__teams">
                         <img src="../img/diluc-icon.png" alt="diluc-icon">
@@ -108,9 +238,66 @@
                         <img src="../img/bennett_icon.png" alt="bennett_icon">
                         <img src="../img/venti_icon.png" alt="venti_icon">
                     </div>
+                    <div class="accordion"> <!-- Acordión de Bootstrap -->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="true"
+                                    aria-controls="panelsStayOpen-collapseThree">
+                                    Detalles de Equipo:
+                                </button>
+                            </h2>
+                            <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse">
+                                <div class="accordion-body">
+                                    <div class="container__details"> <!-- Detalles del Equipo 3-->
+                                        <div class="namedetails1">
+                                            <h2>Diluc</h2>
+                                        </div>
+                                        <div class="namedetails2">
+                                            <h2>Xingqiu</h2>
+                                        </div>
+                                        <div class="namedetails3">
+                                            <h2>Bennett</h2>
+                                        </div>
+                                        <div class="namedetails4">
+                                            <h2>Venti</h2>
+                                        </div>
+                                        <div class="elementdetail1"><img src="../img/pyro_icon.png" alt="pyro_icon">
+                                        </div>
+                                        <div class="elementdetail2"><img src="../img/hydro_icon.png" alt="hydro_icon">
+                                        </div>
+                                        <div class="elementdetail3"><img src="../img/pyro_icon.png" alt="pyro_icon">
+                                        </div>
+                                        <div class="elementdetail4"><img src="../img/anemo_icon.png" alt="anemo_icon">
+                                        </div>
+                                        <div class="positiondetail1">
+                                            <h3>Main DPS</h3>
+                                        </div>
+                                        <div class="positiondetail2">
+                                            <h3>Sub DPS</h3>
+                                        </div>
+                                        <div class="positiondetail3">
+                                            <h3>Support</h3>
+                                        </div>
+                                        <div class="positiondetail4">
+                                            <h3>Sub DPS</h3>
+                                        </div>
+                                        <div class="artifactdetail1"><img src="../img/brujacarmesi_icon.png"
+                                                alt="Set x4 Bruja Carmesí"></div>
+                                        <div class="artifactdetail2"><img src="../img/fate_icon.png"
+                                                alt="Set x4 Emblema del Destino"></div>
+                                        <div class="artifactdetail3"><img src="../img/noblesa_icon.png"
+                                                alt="Set x4 Noblesa Obliga"></div>
+                                        <div class="artifactdetail4"><img src="../img/esmeralda_icon.png"
+                                                alt="Set x4 Verde Esmeralda">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-
 
         </section>
 
@@ -131,6 +318,12 @@
                     <li> <a href="https://www.hoyolab.com/home"><img class="logo__socialmedia"
                                 src="../img/hoyolab_logo.png" alt=""></a></li>
                 </ul>
+            </div>
+        </div>
+        <div class="desktop text-center text-lg-start"> <!-- footer con bootstrap -->
+            <div class="text-center p-4">
+                © 2023 Copyright |
+                <a class="text-dark" href="../../404.html">Términos y Condiciones</a>
             </div>
         </div>
     </footer>
