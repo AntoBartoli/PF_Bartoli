@@ -18,8 +18,8 @@
     display: none;
 }
 
+/* único de equipos.html */
 .no__mostrar--Desktop {
-    /* único de equipos.html */
     display: none;
 }
 
@@ -57,8 +57,8 @@ body {
             grid-template-areas:
                 "titleindex titleindex"
                 "historytitle historytitle"
-                "history1 history1"
-                "history2 imgstory"
+                "history1 imgstory1"
+                "imgstory2 history2"
                 "history3 history3"
                 "textindex videoindex"
                 "ascensiontitle ascensiontitle"
@@ -84,7 +84,7 @@ body {
             flex-direction: column;
             justify-content: center;
             align-items: center;
-
+            margin-left: 4rem;
         }
 
         .videoindex {
@@ -92,7 +92,6 @@ body {
 
             display: flex;
             justify-content: center;
-
         }
 
         .imgindex1 {
@@ -111,26 +110,52 @@ body {
         .history1 {
             grid-area: history1;
 
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
         }
 
         .history2 {
             grid-area: history2;
-            width: 80%;
+
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
         }
 
         .history3 {
             grid-area: history3;
         }
 
-        .imgstory {
-            grid-area: imgstory;
+        .imgstory1 {
+            grid-area: imgstory1;
 
 
             display: flex;
             flex-direction: column;
             justify-content: center;
-            width: 80%;
+            width: 75%;
             transition: .7s;
+            margin-bottom: 3rem;
+        }
+
+        .imgstory2 {
+            grid-area: imgstory2;
+
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 2rem;
+            margin-bottom: 3rem;
+            filter: drop-shadow(4px 4px 10px rgb(36, 140, 142));
+
+            img {
+                width: 80%;
+            }
         }
 
         .ascensiontitle {
@@ -202,18 +227,40 @@ body {
         }
 
         .textStory {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
+            text-align: justify;
+            font-size: 1.4rem;
+            padding: 0 5rem 3rem 5rem;
+
+        }
+
+        .textStory2 {
+            /* único de history3 */
             text-align: justify;
             font-size: 1.4rem;
             padding: .5rem;
-            margin-left: 2rem;
-            margin-right: 1rem;
+            margin-left: 4rem;
+            margin-right: 4rem;
+
         }
 
-        .imgstory:hover {
+        .imgstory1:hover {
             transform: scale(1.2);
+        }
+
+        .bold {
+            font-weight: bold;
+            font-size: 1.6rem;
+        }
+
+        .colorspan {
+            font-weight: bold;
+            color: $border-color;
+        }
+
+        .endtext {
+            text-align: center;
+            font-weight: bold;
+            font-size: 1.7rem;
         }
 
         /* ========================= ARTEFACTOS.HTML =========================*/
@@ -1031,7 +1078,13 @@ body {
             .textStory {
                 margin-left: 0;
                 margin-right: 0;
-                padding: 1rem;
+                padding: 1.5rem;
+            }
+
+            .textStory2 {
+                margin-left: 0;
+                margin-right: 0;
+                padding: 1.5rem;
             }
 
             .titleStory {
@@ -1048,7 +1101,7 @@ body {
                 width: 100%;
             }
 
-            .imgstory {
+            .imgstory1 {
                 transition: none;
             }
 
@@ -1076,6 +1129,26 @@ body {
 
             .img__index {
                 width: 90%;
+            }
+
+            .bold {
+                font-weight: bold;
+                font-size: 1.5rem;
+            }
+
+            .colorspan {
+                font-weight: bold;
+                color: $border-color;
+            }
+
+            .endtext {
+                text-align: center;
+                font-weight: bold;
+                font-size: 1.6rem;
+            }
+
+            .imgstory2 {
+                display: none;
             }
 
             /* ========================= MQ DE ARMAS.HTML ========================  */
@@ -1438,7 +1511,6 @@ body {
                 display: flex;
                 flex-direction: column;
                 justify-content: center;
-
             }
 
             .textStory {
@@ -1461,12 +1533,23 @@ body {
                 width: 100%;
             }
 
-            .imgstory {
+            .imgstory1 {
                 width: 70%;
                 transition: none;
             }
 
-            .imgstory:hover {
+            .imgstory2 {
+                display: none;
+            }
+
+            .textStory2 {
+                margin-left: 0;
+                margin-right: 0;
+                padding: 1.5rem;
+            }
+
+
+            .imgstory1:hover {
                 transform: none;
             }
 
@@ -1485,6 +1568,7 @@ body {
             }
 
             .ascensiontitle {
+                margin-top: 2rem;
                 width: 100%;
             }
 
@@ -1897,7 +1981,7 @@ body {
             .textStory {
                 margin-left: 0;
                 margin-right: 0;
-                padding: 1.5rem 1.5rem 0 1.5rem;
+                padding: 1.5rem 2rem .5rem 2rem;
             }
 
             .titleStory {
@@ -1914,12 +1998,12 @@ body {
                 width: 100%;
             }
 
-            .imgstory {
+            .imgstory1 {
                 width: 70%;
                 transition: none;
             }
 
-            .imgstory:hover {
+            .imgstory1:hover {
                 transform: none;
             }
 
@@ -1938,10 +2022,17 @@ body {
 
             .ascensiontitle {
                 width: 100%;
+                margin-top: 3rem;
             }
 
             .img__index {
                 width: 90%;
+            }
+
+            .textStory2 {
+                margin-left: 0;
+                margin-right: 0;
+                padding: 2rem;
             }
 
             /* ========================= MQ DE ARMAS.HTML ========================  */

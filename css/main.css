@@ -174,8 +174,8 @@ body header nav ul li a:hover {
   display: none;
 }
 
+/* único de equipos.html */
 .no__mostrar--Desktop {
-  /* único de equipos.html */
   display: none;
 }
 
@@ -216,7 +216,7 @@ body main .container__index {
   grid-template-rows: min-content min-content min-content;
   gap: 0px 0px;
   grid-auto-flow: row;
-  grid-template-areas: "titleindex titleindex" "historytitle historytitle" "history1 history1" "history2 imgstory" "history3 history3" "textindex videoindex" "ascensiontitle ascensiontitle" "imgindex1 imgindex1";
+  grid-template-areas: "titleindex titleindex" "historytitle historytitle" "history1 imgstory1" "imgstory2 history2" "history3 history3" "textindex videoindex" "ascensiontitle ascensiontitle" "imgindex1 imgindex1";
 }
 body main .titleindex {
   grid-area: titleindex;
@@ -246,6 +246,7 @@ body main .textindex {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin-left: 4rem;
 }
 body main .videoindex {
   grid-area: videoindex;
@@ -274,16 +275,6 @@ body main .historytitle {
 }
 body main .history1 {
   grid-area: history1;
-}
-body main .history2 {
-  grid-area: history2;
-  width: 80%;
-}
-body main .history3 {
-  grid-area: history3;
-}
-body main .imgstory {
-  grid-area: imgstory;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -294,9 +285,68 @@ body main .imgstory {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  width: 80%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+body main .history2 {
+  grid-area: history2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+body main .history3 {
+  grid-area: history3;
+}
+body main .imgstory1 {
+  grid-area: imgstory1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 75%;
   -webkit-transition: 0.7s;
   transition: 0.7s;
+  margin-bottom: 3rem;
+}
+body main .imgstory2 {
+  grid-area: imgstory2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 2rem;
+  margin-bottom: 3rem;
+  -webkit-filter: drop-shadow(4px 4px 10px rgb(36, 140, 142));
+          filter: drop-shadow(4px 4px 10px rgb(36, 140, 142));
+}
+body main .imgstory2 img {
+  width: 80%;
 }
 body main .ascensiontitle {
   grid-area: ascensiontitle;
@@ -356,25 +406,34 @@ body main .titleStory {
   background-color: rgb(196, 255, 249);
 }
 body main .textStory {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  text-align: justify;
+  font-size: 1.4rem;
+  padding: 0 5rem 3rem 5rem;
+}
+body main .textStory2 {
+  /* único de history3 */
   text-align: justify;
   font-size: 1.4rem;
   padding: 0.5rem;
-  margin-left: 2rem;
-  margin-right: 1rem;
+  margin-left: 4rem;
+  margin-right: 4rem;
 }
-body main .imgstory:hover {
+body main .imgstory1:hover {
   -webkit-transform: scale(1.2);
           transform: scale(1.2);
+}
+body main .bold {
+  font-weight: bold;
+  font-size: 1.6rem;
+}
+body main .colorspan {
+  font-weight: bold;
+  color: whitesmoke;
+}
+body main .endtext {
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.7rem;
 }
 body main .container__artifacts {
   display: grid;
@@ -1329,7 +1388,12 @@ body .row {
   body main .textStory {
     margin-left: 0;
     margin-right: 0;
-    padding: 1rem;
+    padding: 1.5rem;
+  }
+  body main .textStory2 {
+    margin-left: 0;
+    margin-right: 0;
+    padding: 1.5rem;
   }
   body main .titleStory {
     font-size: 2rem;
@@ -1352,7 +1416,7 @@ body .row {
             align-items: center;
     width: 100%;
   }
-  body main .imgstory {
+  body main .imgstory1 {
     -webkit-transition: none;
     transition: none;
   }
@@ -1376,6 +1440,22 @@ body .row {
   }
   body main .img__index {
     width: 90%;
+  }
+  body main .bold {
+    font-weight: bold;
+    font-size: 1.5rem;
+  }
+  body main .colorspan {
+    font-weight: bold;
+    color: whitesmoke;
+  }
+  body main .endtext {
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.6rem;
+  }
+  body main .imgstory2 {
+    display: none;
   }
   body main .container__weapons {
     display: -webkit-box;
@@ -1819,12 +1899,20 @@ body .row {
             align-items: center;
     width: 100%;
   }
-  body main .imgstory {
+  body main .imgstory1 {
     width: 70%;
     -webkit-transition: none;
     transition: none;
   }
-  body main .imgstory:hover {
+  body main .imgstory2 {
+    display: none;
+  }
+  body main .textStory2 {
+    margin-left: 0;
+    margin-right: 0;
+    padding: 1.5rem;
+  }
+  body main .imgstory1:hover {
     -webkit-transform: none;
             transform: none;
   }
@@ -1840,6 +1928,7 @@ body .row {
     margin-bottom: 1.5rem;
   }
   body main .ascensiontitle {
+    margin-top: 2rem;
     width: 100%;
   }
   body main .img__index {
@@ -2305,7 +2394,7 @@ body .row {
   body main .textStory {
     margin-left: 0;
     margin-right: 0;
-    padding: 1.5rem 1.5rem 0 1.5rem;
+    padding: 1.5rem 2rem 0.5rem 2rem;
   }
   body main .titleStory {
     font-size: 2.5rem;
@@ -2328,12 +2417,12 @@ body .row {
             align-items: center;
     width: 100%;
   }
-  body main .imgstory {
+  body main .imgstory1 {
     width: 70%;
     -webkit-transition: none;
     transition: none;
   }
-  body main .imgstory:hover {
+  body main .imgstory1:hover {
     -webkit-transform: none;
             transform: none;
   }
@@ -2349,9 +2438,15 @@ body .row {
   }
   body main .ascensiontitle {
     width: 100%;
+    margin-top: 3rem;
   }
   body main .img__index {
     width: 90%;
+  }
+  body main .textStory2 {
+    margin-left: 0;
+    margin-right: 0;
+    padding: 2rem;
   }
   body main .container__weapons {
     display: -webkit-box;
