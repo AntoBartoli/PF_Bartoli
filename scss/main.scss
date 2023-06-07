@@ -127,6 +127,7 @@ body {
 
         .history3 {
             grid-area: history3;
+            margin-bottom: 4rem;
         }
 
         .imgstory1 {
@@ -159,6 +160,7 @@ body {
 
         .ascensiontitle {
             grid-area: ascensiontitle;
+            margin-top: 4rem;
         }
 
         /*============= termina el grid============= */
@@ -1092,6 +1094,10 @@ body {
                 margin-bottom: 2rem;
             }
 
+            .history3 {
+                margin-bottom: 2rem;
+            }
+
             .history2 {
                 display: flex;
                 flex-direction: column;
@@ -1124,6 +1130,7 @@ body {
 
             .ascensiontitle {
                 width: 100%;
+                margin-top: 1rem;
             }
 
             .img__index {
@@ -1522,6 +1529,10 @@ body {
                 justify-content: center;
                 align-items: center;
                 width: 100%;
+            }
+
+            .history3 {
+                margin-bottom: 2rem;
             }
 
             .imgstory1 {
@@ -1989,6 +2000,10 @@ body {
                 width: 100%;
             }
 
+            .history3 {
+                margin-bottom: 1.5rem;
+            }
+
             .imgstory1 {
                 width: 70%;
                 transition: none;
@@ -2013,7 +2028,7 @@ body {
 
             .ascensiontitle {
                 width: 100%;
-                margin-top: 3rem;
+                margin-top: 2rem;
             }
 
             .img__index {
@@ -2386,7 +2401,7 @@ body {
 
     body {
         max-width: 1920px;
-        /* elegí 1920px de max por la resolución de mi pantalla */
+        /* elegí 1920px de max por la resolución de mi pantalla (1920 x 1080)*/
         margin: auto;
     }
 
