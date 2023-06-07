@@ -43,8 +43,7 @@ body {
     line-height: inherit;
 
     main {
-        padding-bottom: 15rem;
-
+        padding-bottom: 14rem;
 
 
         /* ========================= INDEX ========================= */
@@ -254,7 +253,7 @@ body {
 
         .colorspan {
             font-weight: bold;
-            color: $border-color;
+            color: rgb(18, 56, 56);
         }
 
         .endtext {
@@ -1132,18 +1131,10 @@ body {
             }
 
             .bold {
-                font-weight: bold;
                 font-size: 1.5rem;
             }
 
-            .colorspan {
-                font-weight: bold;
-                color: $border-color;
-            }
-
             .endtext {
-                text-align: center;
-                font-weight: bold;
                 font-size: 1.6rem;
             }
 
@@ -2387,4 +2378,15 @@ body {
             }
         }
     }
+}
+
+/* =============================== MEDIA QUERIES - XXL ================================
+-----------------------------------------------------------------------------------------*/
+@media screen and (min-width: 1400px) {
+
+    body {
+        max-width: 1920px;
+        margin: auto;
+    }
+
 }

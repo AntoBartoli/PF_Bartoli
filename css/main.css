@@ -198,7 +198,7 @@ body {
   /*====== Como se importaron elementos de Bootstrap hubo que hacer modificaciones en las clases ===== */
 }
 body main {
-  padding-bottom: 15rem;
+  padding-bottom: 14rem;
   /* ========================= INDEX ========================= */
   /*============= termina el grid============= */
   /* =============título con imagen del index =============*/
@@ -428,7 +428,7 @@ body main .bold {
 }
 body main .colorspan {
   font-weight: bold;
-  color: whitesmoke;
+  color: rgb(18, 56, 56);
 }
 body main .endtext {
   text-align: center;
@@ -1442,16 +1442,9 @@ body .row {
     width: 90%;
   }
   body main .bold {
-    font-weight: bold;
     font-size: 1.5rem;
   }
-  body main .colorspan {
-    font-weight: bold;
-    color: whitesmoke;
-  }
   body main .endtext {
-    text-align: center;
-    font-weight: bold;
     font-size: 1.6rem;
   }
   body main .imgstory2 {
@@ -2840,5 +2833,13 @@ body .row {
         -ms-flex-pack: center;
             justify-content: center;
     width: 100%;
+  }
+}
+/* =============================== MEDIA QUERIES - XXL ================================
+-----------------------------------------------------------------------------------------*/
+@media screen and (min-width: 1400px) {
+  body {
+    max-width: 1920px;
+    margin: auto;
   }
 }
