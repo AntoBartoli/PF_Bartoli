@@ -2837,9 +2837,10 @@ body .row {
 }
 /* =============================== MEDIA QUERIES - XXL ================================
 -----------------------------------------------------------------------------------------*/
-@media screen and (min-width: 1400px) {
+@media screen and (min-width: 1440px) {
   body {
     max-width: 1920px;
+    /* elegí 1920px de max por la resolución de mi pantalla */
     margin: auto;
   }
 }
